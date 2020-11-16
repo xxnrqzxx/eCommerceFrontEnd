@@ -24,8 +24,6 @@ class Contents extends  React.Component {
             </nav>
         );
     }
-
-
 }
 
 ReactDOM.render(<Contents />, document.querySelector('#nav'));
