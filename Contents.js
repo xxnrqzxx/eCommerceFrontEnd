@@ -1,4 +1,6 @@
 class Contents extends  React.Component {
+
+    //test
     render() {
         return(
             <nav className="navbar navbar-expand-lg navbar-dark">
