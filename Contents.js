@@ -1,9 +1,10 @@
 class Contents extends  React.Component {
+
+    //test
     render() {
         return(
             <nav className="navbar navbar-expand-lg navbar-dark">
-                <a href="#" className="navbar-brand">Navbar</a>
-
+                <a href="#" className="navbar-brand">GRAFIX2GO</a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -15,22 +16,14 @@ class Contents extends  React.Component {
                         <li className="nav-item">
                             <a className="nav-link" href="#">About</a>
                         </li>
-                        <li className="nav-item dropdown">
-                            <a href="#" className="nav-link dropdown-toggle" id="listDropdownMenu" data-toggle="dropdown" role="button">Dropdown</a>
-                        
-                            <div className="dropdown-menu">
-                                <a href="#" className="dropdown-item">Something</a>
-                                <a href="#" className="dropdown-item">Something else</a>
-                                <a href="#" className="dropdown-item">Something else else</a>
-                            </div>
+                        <li className="nav-item active">
+                            <a className="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         );
     }
-
-
 }
 
 ReactDOM.render(<Contents />, document.querySelector('#nav'));
