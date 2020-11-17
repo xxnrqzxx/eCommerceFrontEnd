@@ -25,4 +25,19 @@ class Contents extends  React.Component {
     }
 }
 
+document.addEventListener("click", event => {
+    const element = event.target;
+    console.log(element);
+
+    if(element.classList.contains('navbar-toggler-icon')) {
+        darkenBG();
+    }
+})
+
+
+function darkenBG() {
+    const bgColor = document.body;
+    const sideBar = document.querySelector('#myNavbar');
+}
+
 ReactDOM.render(<Contents />, document.querySelector('#nav'));
