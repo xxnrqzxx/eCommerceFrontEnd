@@ -1,23 +1,20 @@
-class Contents extends  React.Component {
+class Contents extends React.Component {
 
     constructor(props){
         super(props);
-
         this.state = {
             darken: false
-        }
-    }
+        };
 
-    darkBG() {
-        
+        this.darkBG = this.darkBG.bind(this);
     }
 
     render() {
-        let color = this.state.darken ? "" : "red";
+        let color = this.state.darken ? "rgba(0, 0, 0, 0.5)" : "";
 
-        const styles = {
-            
-        }
+        document.body.style.backgroundColor = color;
+
+        console.log(color);
 
         return(
             <nav className="navbar navbar-expand-lg navbar-dark">
@@ -40,6 +37,13 @@ class Contents extends  React.Component {
                 </div>
             </nav>
         );
+    }
+
+    darkBG() {
+        this.setState(state => ({
+            darken: !this.state.darken
+        }));
+        console.log("darkBG");
     }
 }
 
