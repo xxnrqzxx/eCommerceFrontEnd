@@ -7,14 +7,39 @@ class Contents extends React.Component {
         };
 
         this.darkBG = this.darkBG.bind(this);
+        this.clickDocument = this.clickDocument.bind(this);
+    }
+
+    componentDidMount () {
+        document.addEventListener('click', this.clickDocument);
+    }
+
+    componentWillUnmount() {
+        document.addEventListener('click', this.clickDocument);
+    }
+
+    clickDocument(e) {
+        const element = e.target;
+        const navBar = document.querySelector('.navbar-collapse');
+
+        if(!(element.classList.contains('nav-link') || element.classList.contains('navbar-collapse') || element.classList.contains('navbar-toggler-icon') || element.classList.contains('navbar-toggler'))) {
+            if(navBar.classList.contains('show')) {
+                navBar.classList.remove("show", "collapse");
+                navBar.className += " collapsing";
+                navBar.classList.remove("collapsing");
+                setTimeout(function() {
+                    navBar.className += " collapse";
+                }, 200);
+                document.body.style.backgroundColor = "";
+                this.darkBG();
+            }
+        }
     }
 
     render() {
         let color = this.state.darken ? "rgba(0, 0, 0, 0.5)" : "";
 
         document.body.style.backgroundColor = color;
-
-        console.log(color);
 
         return(
             <nav className="navbar navbar-expand-lg navbar-dark">
@@ -43,29 +68,8 @@ class Contents extends React.Component {
         this.setState(state => ({
             darken: !this.state.darken
         }));
-        console.log("darkBG");
     }
 }
 
-// document.addEventListener("click", event => {
-//     const element = event.target;
-//     console.log(element);
-
-//     if(element.classList.contains('navbar-toggler-icon')) {
-//         darkenBG();
-//     }
-// })
-
-
-// function darkenBG() {
-//     const bgColor = document.body;
-//     const sideBar = document.querySelector('#myNavbar');
-
-//     if(sideBar.classList.contains("collapsing") && bgColor.style.backgroundColor === "") {
-//         bgColor.style.backgroundColor = "red";
-//     } else if(bgColor.style.backgroundColor === "red"){
-//         bgColor.style.backgroundColor = "";
-//     }
-// }
 
 ReactDOM.render(<Contents />, document.querySelector('#nav'));
