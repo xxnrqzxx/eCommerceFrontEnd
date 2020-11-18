@@ -22,6 +22,8 @@ class Contents extends React.Component {
         const element = e.target;
         const navBar = document.querySelector('.navbar-collapse');
 
+        console.log(element);
+
         if(!(element.classList.contains('nav-link') || element.classList.contains('navbar-collapse') || element.classList.contains('navbar-toggler-icon') || element.classList.contains('navbar-toggler'))) {
             if(navBar.classList.contains('show')) {
                 navBar.classList.remove("show", "collapse");
@@ -42,25 +44,25 @@ class Contents extends React.Component {
         document.body.style.backgroundColor = color;
 
         return(
-            <div class="d-block d-lg-none">
+            <div className="d-block d-lg-none">
                 <nav className="navbar navbar-expand-lg navbar-dark">
-                <a href="#" className="navbar-brand">GRAFIX2GO</a>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" onClick={this.darkBG}>
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="myNavbar">
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Home</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">About</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+                    <a href="#" className="navbar-brand">GRAFIX2GO</a>
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" onClick={this.darkBG}>
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse" id="myNavbar">
+                        <ul className="navbar-nav">
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">Home</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">About</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
             </nav>
         </div>  
         );
