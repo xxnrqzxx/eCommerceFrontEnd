@@ -42,7 +42,8 @@ class Contents extends React.Component {
         document.body.style.backgroundColor = color;
 
         return(
-            <nav className="navbar navbar-expand-lg navbar-dark">
+            <div class="d-block d-lg-none">
+                <nav className="navbar navbar-expand-lg navbar-dark">
                 <a href="#" className="navbar-brand">GRAFIX2GO</a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" onClick={this.darkBG}>
                     <span className="navbar-toggler-icon"></span>
@@ -61,6 +62,7 @@ class Contents extends React.Component {
                     </ul>
                 </div>
             </nav>
+        </div>  
         );
     }
 
