@@ -21,6 +21,8 @@ class Contents extends React.Component {
     clickDocument(e) {
         const element = e.target;
         const navBar = document.querySelector('.navbar-collapse');
+        const navTogglerOpen = document.querySelector('.navbar-toggler-icon');
+        const navTogglerClose = document.querySelector('.navbar-toggler-icon-close');
 
         console.log(element);
 
