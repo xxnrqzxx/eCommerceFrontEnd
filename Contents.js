@@ -53,6 +53,7 @@ class Contents extends React.Component {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="myNavbar">
+                        <p className="close-navbar">X</p>
                         <ul className="navbar-nav">
                             <li className="nav-item">
                                 <a className="nav-link" href="#">Home</a>
