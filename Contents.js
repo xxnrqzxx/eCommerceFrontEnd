@@ -11,11 +11,16 @@ class Contents extends React.Component {
     }
 
     componentDidMount () {
+        if(window.innerWidth < 420) {
+            document.querySelector('.navbar').className += " fixed-top";
+        } else {
+            document.querySelector('.navbar').classList.remove('fixed-top');
+        }
         document.addEventListener('click', this.clickDocument);
     }
 
     componentWillUnmount() {
-        document.addEventListener('click', this.clickDocument);
+        document.removeEventListener('click', this.clickDocument);
     }
 
     clickDocument(e) {
@@ -23,8 +28,6 @@ class Contents extends React.Component {
         const navBar = document.querySelector('.navbar-collapse');
         const navTogglerOpen = document.querySelector('.navbar-toggler-icon');
         const navTogglerClose = document.querySelector('.navbar-toggler-icon-close');
-
-        console.log(element);
 
         if(!(element.classList.contains('nav-link') || element.classList.contains('navbar-collapse') || element.classList.contains('navbar-toggler-icon') || element.classList.contains('navbar-toggler'))) {
             if(navBar.classList.contains('show')) {
@@ -53,8 +56,8 @@ class Contents extends React.Component {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="myNavbar">
-                        <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-arrow-right close-navbar" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        <svg width="3em" height="3em" viewBox="0 0 16 16" className="bi bi-arrow-right close-navbar" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
                         </svg>
                         <ul className="navbar-nav">
                             <li className="nav-item">

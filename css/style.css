@@ -13,7 +13,14 @@ body {
   font-weight: bold;
 }
 
+.close-navbar {
+  display: none;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 420px) {
+  #nav {
+    margin-bottom: 20%;
+  }
   .navbar-toggler:hover {
     background-color: #3f3f3f;
   }
@@ -23,6 +30,7 @@ body {
     margin-top: -55%;
     margin-bottom: 10%;
     float: right;
+    display: block;
   }
   .close-navbar:hover {
     color: white;
@@ -37,7 +45,7 @@ body {
   }
   .navbar-collapse {
     background-color: black;
-    box-shadow: -10px 12px 20px;
+    box-shadow: -10px -10px 10px;
     position: fixed;
     top: 0%;
     padding-top: 20%;
