@@ -14,16 +14,19 @@ body {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 420px) {
+  .navbar-toggler:hover {
+    background-color: #494949;
+  }
   .close-navbar {
+    font-size: 15px;
     color: gray;
     width: 25px;
     text-align: center;
-    margin-top: -35%;
+    margin-top: -55%;
     margin-left: 55%;
     margin-bottom: 10%;
   }
   .close-navbar:hover {
-    font-weight: bold;
     color: white;
   }
   .nav-link:hover {
