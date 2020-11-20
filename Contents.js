@@ -11,6 +11,7 @@ class Contents extends React.Component {
     }
 
     componentDidMount () {
+        // alert("width: " + window.innerWidth + " height: " + window.innerHeight);
         if(window.innerWidth < 420) {
             document.querySelector('.navbar').className += " fixed-top";
         } else {
@@ -49,7 +50,7 @@ class Contents extends React.Component {
         document.body.style.backgroundColor = color;
 
         return(
-            <div className="d-block d-lg-none">
+            <div className="d-block">
                 <nav className="navbar navbar-expand-lg navbar-dark">
                     <a href="#" className="navbar-brand">GRAFIX2GO</a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" onClick={this.darkBG}>
