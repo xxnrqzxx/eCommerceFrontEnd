@@ -42,20 +42,14 @@ class Contents extends React.Component {
             }
         }
     
-        if(element.classList.contains('navbar-toggler-icon') || element.classList.contains('navbar-toggler')) {
-            if(navBar.classList.contains('show')) {
-                alert('show');
-            } else {
-                alert('hidden');
-            }
-        }
-
     }
 
     render() {
         let color = this.state.darken ? "rgba(0, 0, 0, 0.5)" : "";
+        let scroll = this.state.darken ? "hidden" : "visible";
 
         document.body.style.backgroundColor = color;
+        document.body.style.overflowY = scroll;
 
         return(
             <div className="d-block d-lg-none">
