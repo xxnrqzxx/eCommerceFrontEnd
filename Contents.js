@@ -12,7 +12,7 @@ class Contents extends React.Component {
 
     componentDidMount () {
         // alert("width: " + window.innerWidth + " height: " + window.innerHeight);
-        if(window.innerWidth < 420) {
+        if(window.innerWidth <= 800) {
             document.querySelector('.navbar').className += " fixed-top";
         } else {
             document.querySelector('.navbar').classList.remove('fixed-top');
@@ -26,11 +26,10 @@ class Contents extends React.Component {
 
     clickDocument(e) {
         const element = e.target;
+        console.log(element);
         const navBar = document.querySelector('.navbar-collapse');
-        const navTogglerOpen = document.querySelector('.navbar-toggler-icon');
-        const navTogglerClose = document.querySelector('.navbar-toggler-icon-close');
 
-        if(!(element.classList.contains('nav-link') || element.classList.contains('navbar-collapse') || element.classList.contains('navbar-toggler-icon') || element.classList.contains('navbar-toggler'))) {
+        if(!(element.classList.contains('nav-link') || element.classList.contains('nav-item') || element.classList.contains('navbar-collapse') || element.classList.contains('navbar-toggler-icon') || element.classList.contains('navbar-toggler'))) {
             if(navBar.classList.contains('show')) {
                 navBar.classList.remove("show", "collapse");
                 navBar.className += " collapsing";
@@ -42,6 +41,15 @@ class Contents extends React.Component {
                 this.darkBG();
             }
         }
+    
+        if(element.classList.contains('navbar-toggler-icon') || element.classList.contains('navbar-toggler')) {
+            if(navBar.classList.contains('show')) {
+                alert('show');
+            } else {
+                alert('hidden');
+            }
+        }
+
     }
 
     render() {
@@ -50,7 +58,7 @@ class Contents extends React.Component {
         document.body.style.backgroundColor = color;
 
         return(
-            <div className="d-block">
+            <div className="d-block d-lg-none">
                 <nav className="navbar navbar-expand-lg navbar-dark">
                     <a href="#" className="navbar-brand">GRAFIX2GO</a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" onClick={this.darkBG}>
