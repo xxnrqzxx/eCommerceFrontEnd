@@ -24,6 +24,7 @@ class Navbar extends React.Component {
     clickDocument(e) {
         const element = e.target;
         console.log(element);
+        console.log(element.parentElement);
         const navBar = document.querySelector('.navbar-collapse');
 
         if(!(element.classList.contains('nav-link') || element.classList.contains('nav-item') || element.classList.contains('navbar-collapse') || element.classList.contains('navbar-toggler-icon') || element.classList.contains('navbar-toggler'))) {
@@ -38,12 +39,15 @@ class Navbar extends React.Component {
                 this.darkBG();
             }
         }
+
+
     }
 
     fixedTop() {
         const navBar = document.querySelector('.navbar');
 
         if(window.innerWidth <= 800) {
+            // alert(window.innerWidth);
             navBar.className += " fixed-top";
         } else {
             navBar.classList.remove('fixed-top');
@@ -65,18 +69,20 @@ class Navbar extends React.Component {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="myNavbar">
-                        <svg width="3em" height="3em" viewBox="0 0 16 16" className="bi bi-arrow-right close-navbar" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                        </svg>
+                        <button className="close-navbar">
+                            <svg width="2em" height="2em" viewBox="0 0 16 16" className="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                            </svg>
+                        </button>
                         <ul className="navbar-nav">
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Home</a>
+                            <li className="nav-item active">
+                                <a className="nav-link" href="#">HOME</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">About</a>
+                                <a className="nav-link" href="#">ABOUT</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Contact</a>
+                                <a className="nav-link" href="#">CONTACT</a>
                             </li>
                         </ul>
                     </div>

@@ -17,7 +17,7 @@ body {
     display: none;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 800px) {
+@media only screen and (min-width: 320px) and (max-width: 799px) {
     body {
         padding-top: 60px;
     }
@@ -27,9 +27,10 @@ body {
     }
 
     .close-navbar {
+        background-color: black;
+        border: none;
         color: gray;
-        width: 25px;
-        margin-top: -55%;
+        margin-top: -52%;
         float: right;
         display: block;
     }
@@ -38,13 +39,17 @@ body {
         color: white;
     }
 
+    .close-navbar, .close-navbar:focus, .close-navbar:active{
+        padding:0;
+    }
+
     .nav-link {
         font-size: 15px;
     }
 
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 500px) {
         .navbar-nav {
-            margin-top: -30%;
+            margin-top: -20%;
         }
         .nav-link {
             font-size: 18px;
@@ -52,8 +57,20 @@ body {
     }
 
     @media only screen and (min-width: 700px) {
+        body {
+            padding-top: 70px;
+        }
+
         .nav-link {
             font-size: 20px;
+        }
+
+        .navbar-brand {
+            font-size: 25px;
+        }
+
+        .close-navbar {
+            margin-top: -50%;
         }
     }
 
@@ -62,10 +79,11 @@ body {
         margin-bottom: 3px;
     }
 
-    .nav-item:hover {
+    .nav-item:hover, .active{
         width: 200%;
         border-radius: 15px;
         background-color: rgb(63, 63, 63);
+        font-weight: bold;
     }
 
     .navbar-collapse{
