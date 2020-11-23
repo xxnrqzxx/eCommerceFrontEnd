@@ -8,6 +8,7 @@ class Navbar extends React.Component {
 
         this.darkBG = this.darkBG.bind(this);
         this.clickDocument = this.clickDocument.bind(this);
+        this.changeOrientation = this.changeOrientation.bind(this);
         this.fixedTop = this.fixedTop.bind(this);
     }
 
@@ -53,7 +54,7 @@ class Navbar extends React.Component {
     fixedTop() {
         const navBar = document.querySelector('.navbar');
 
-        if(window.innerWidth <= 900) {
+        if(window.innerWidth <= 970) {
             // alert(window.innerWidth);
             navBar.className += " fixed-top";
         } else {
@@ -61,12 +62,15 @@ class Navbar extends React.Component {
         }
     }
 
+
     render() {
         let color = this.state.darken ? "rgba(0, 0, 0, 0.5)" : "";
         let scroll = this.state.darken ? "hidden" : "visible";
 
         document.body.style.backgroundColor = color;
         document.body.style.overflowY = scroll;
+
+        window.addEventListener('resize', this.changeOrientation);
 
         return(
             <div className="d-block">
@@ -96,6 +100,26 @@ class Navbar extends React.Component {
             </nav>
         </div>  
         );
+    }
+
+    changeOrientation() {
+        const navBar = document.querySelector('.navbar');
+        const sideBar = document.querySelector('.navbar-collapse')
+        if(window.innerWidth <= 970) {
+            navBar.className += " fixed-top";
+        } else {
+            navBar.classList.remove('fixed-top');
+            sideBar.classList.remove("show", "collapse");
+            sideBar.className += " collapsing";
+            sideBar.classList.remove("collapsing");
+            setTimeout(function() {
+                sideBar.className += " collapse";
+            }, 200);
+            document.body.style.backgroundColor = "";
+            this.setState(state => ({
+                darken: false
+            }));
+        }
     }
 
     darkBG() {
