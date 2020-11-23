@@ -117,7 +117,7 @@ body {
 /*phone screens: large landscape only || tablet screens: portrait and small landscape only*/
 @media only screen and (min-width: 800px) and (max-width: 970px){
     body {
-        padding-top: 70px;
+        padding-top: 75px;
         transition: all 0.3s ease;
     }
 
@@ -147,11 +147,11 @@ body {
     }
 
     .nav-link {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .navbar-brand {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .close-navbar {
@@ -197,7 +197,7 @@ body {
     }
 }
 
-/*tablet screens: large landscape only*/
+/*tablet screens: large tablet view ports*/
 @media only screen and (min-width: 1000px) and (min-height: 700px) {
 
     .navbar-brand {
@@ -216,4 +216,6 @@ body {
         // font-weight: bold;
     }
 }
+
+/*tablet screens: extra large tablet view ports*/
 
