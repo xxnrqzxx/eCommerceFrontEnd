@@ -53,7 +53,7 @@ class Navbar extends React.Component {
     fixedTop() {
         const navBar = document.querySelector('.navbar');
 
-        if(window.innerWidth <= 800) {
+        if(window.innerWidth <= 900) {
             // alert(window.innerWidth);
             navBar.className += " fixed-top";
         } else {
@@ -69,7 +69,7 @@ class Navbar extends React.Component {
         document.body.style.overflowY = scroll;
 
         return(
-            <div className="d-block d-lg-none">
+            <div className="d-block">
                 <nav className="navbar navbar-expand-lg navbar-dark">
                     <a href="#" className="navbar-brand">GRAFIX2GO</a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" onClick={this.darkBG}>
