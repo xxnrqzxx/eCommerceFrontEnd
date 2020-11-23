@@ -9,6 +9,7 @@ class Navbar extends React.Component {
         this.darkBG = this.darkBG.bind(this);
         this.clickDocument = this.clickDocument.bind(this);
         this.changeOrientation = this.changeOrientation.bind(this);
+        this.hideSideBar = this.hideSideBar.bind(this);
         this.fixedTop = this.fixedTop.bind(this);
     }
 
@@ -31,13 +32,7 @@ class Navbar extends React.Component {
 
         if(!(element.classList.contains('nav-link') || element.classList.contains('nav-item') || element.classList.contains('navbar-collapse') || element.classList.contains('navbar-toggler-icon') || element.classList.contains('navbar-toggler'))) {
             if(navBar.classList.contains('show')) {
-                navBar.classList.remove("show", "collapse");
-                navBar.className += " collapsing";
-                navBar.classList.remove("collapsing");
-                setTimeout(function() {
-                    navBar.className += " collapse";
-                }, 200);
-                document.body.style.backgroundColor = "";
+                this.hideSideBar();
                 this.darkBG();
             }
         }
@@ -104,23 +99,27 @@ class Navbar extends React.Component {
 
     changeOrientation() {
         const navBar = document.querySelector('.navbar');
-        const sideBar = document.querySelector('.navbar-collapse')
+ 
         if(window.innerWidth <= 970) {
             navBar.className += " fixed-top";
         } else {
-            navBar.classList.remove('fixed-top');
-            sideBar.classList.remove("show", "collapse");
-            sideBar.className += " collapsing";
-            sideBar.classList.remove("collapsing");
-            setTimeout(function() {
-                sideBar.className += " collapse";
-            }, 200);
-            document.body.style.backgroundColor = "";
+            this.hideSideBar();
             this.setState(state => ({
                 darken: false
             }));
         }
     }
+
+    hideSideBar() {
+        const navBar = document.querySelector('.navbar-collapse');
+        navBar.classList.remove("show", "collapse");
+            navBar.className += " collapsing";
+            navBar.classList.remove("collapsing");
+            setTimeout(function() {
+                navBar.className += " collapse";
+            }, 200);
+            document.body.style.backgroundColor = "";
+        }
 
     darkBG() {
         this.setState(state => ({
