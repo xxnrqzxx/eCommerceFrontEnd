@@ -26,6 +26,7 @@ class Navbar extends React.Component {
         console.log(element);
         console.log(element.parentElement);
         const navBar = document.querySelector('.navbar-collapse');
+        const navItem = document.querySelectorAll('.nav-item');
 
         if(!(element.classList.contains('nav-link') || element.classList.contains('nav-item') || element.classList.contains('navbar-collapse') || element.classList.contains('navbar-toggler-icon') || element.classList.contains('navbar-toggler'))) {
             if(navBar.classList.contains('show')) {
@@ -40,6 +41,12 @@ class Navbar extends React.Component {
             }
         }
 
+        if(element.classList.contains('nav-link') || element.classList.contains('nav-item')) {
+            for(let i=0; i<navItem.length; i++) {
+                navItem[i].classList.remove('active');
+            }
+            element.parentElement.className += " active";
+        }
 
     }
 
