@@ -13,6 +13,11 @@ body {
   font-size: 35px;
 }
 
+#img {
+  width: 100%;
+  height: auto;
+}
+
 .close-navbar {
   display: none;
 }
@@ -24,6 +29,10 @@ body {
 .active {
   border-radius: 50px;
   background-color: #3f3f3f;
+}
+
+.image {
+  width: 300px;
 }
 
 /*phone screens: portrait and small landscape | tablet screens: small portrait only*/
