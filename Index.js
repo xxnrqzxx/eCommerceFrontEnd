@@ -131,31 +131,24 @@ class Contents extends React.Component {
     constructor(props) {
         super(props);
 
-        this.imageSize = this.imageSize.bind(this);
     }
 
     render() {
 
-        
-
         return(
             <div className="container-fluid d-flex flex-column justify-content-center pt-3">
-                    <img id="img" className="pb-3" src={window.addEventListener('resize', function(event) {
-                        this.imageSize(event);
-                    })}></img>
+                <img id="img" className="pb-3" src="https://picsum.photos/800/400"></img>
+                <img id="img" className="pb-3" src="https://picsum.photos/1200/600"></img>
+                <img id="img" className="pb-3" src="https://picsum.photos/1200/600"></img>
+                <img id="img" className="pb-3" src="https://picsum.photos/1200/600"></img>
+                <img id="img" className="pb-3" src="https://picsum.photos/1200/600"></img>
+                <img id="img" className="pb-3" src="https://picsum.photos/1200/600"></img>
+                <img id="img" className="pb-3" src="https://picsum.photos/1200/600"></img>
+                <img id="img" className="pb-3" src="https://picsum.photos/1200/600"></img>
+                <img id="img" className="pb-3" src="https://picsum.photos/1200/600"></img>
             </div>
         );
     }
-    imageSize() {
-        const imgSrc = "https://picsum.photos/";
-        let imgSize = ""
-        if(window.innerWidth < 600) {
-            imgSize = "400/200"
-        } else {
-            imgSize = "1200/600"
-        }
-        return imgSrc + imgSize;
-    } 
 }
 
 
