@@ -128,60 +128,34 @@ class Navbar extends React.Component {
 }
 
 class Contents extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.imageSize = this.imageSize.bind(this);
+    }
+
     render() {
+
+        
+
         return(
-            <div>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis possimus voluptatibus aperiam impedit officia earum, natus laborum magni explicabo iure. Libero, ipsam. Neque, beatae saepe? Eveniet autem atque magni.
+            <div className="container-fluid d-flex flex-column justify-content-center pt-3">
+                    <img id="img" className="pb-3" src={window.addEventListener('resize', function(event) {
+                        this.imageSize(event);
+                    })}></img>
             </div>
         );
     }
+    imageSize() {
+        const imgSrc = "https://picsum.photos/";
+        let imgSize = ""
+        if(window.innerWidth < 600) {
+            imgSize = "400/200"
+        } else {
+            imgSize = "1200/600"
+        }
+        return imgSrc + imgSize;
+    } 
 }
 
 
