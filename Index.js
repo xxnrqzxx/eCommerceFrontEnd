@@ -68,32 +68,30 @@ class Navbar extends React.Component {
         window.addEventListener('resize', this.changeOrientation);
 
         return(
-            <div className="d-block">
-                <nav className="navbar navbar-expand-lg navbar-dark">
-                    <a href="#" className="navbar-brand">GRAFIX2GO</a>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" onClick={this.darkBG}>
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="myNavbar">
-                        <button className="close-navbar">
-                            <svg width="2em" height="2em" viewBox="0 0 16 16" className="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <nav className="navbar navbar-expand-lg navbar-dark">
+                <a href="#" className="navbar-brand">GRAFIX2GO</a>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" onClick={this.darkBG}>
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="myNavbar">
+                    <button className="close-navbar">
+                        <svg width="2em" height="2em" viewBox="0 0 16 16" className="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                            </svg>
-                        </button>
-                        <ul className="navbar-nav">
-                            <li className="nav-item active">
-                                <a className="nav-link" href="#">HOME</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">ABOUT</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">CONTACT</a>
-                            </li>
-                        </ul>
-                    </div>
+                        </svg>
+                    </button>
+                    <ul className="navbar-nav">
+                        <li className="nav-item active">
+                            <a className="nav-link" href="#">HOME</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">ABOUT</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
-        </div>  
         );
     }
 
@@ -103,6 +101,7 @@ class Navbar extends React.Component {
         if(window.innerWidth <= 970) {
             navBar.className += " fixed-top";
         } else {
+            navBar.classList.remove('fixed-top');
             this.hideSideBar();
             this.setState(state => ({
                 darken: false

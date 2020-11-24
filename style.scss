@@ -10,10 +10,20 @@ body {
 
 .navbar-brand {
     font-weight: bold;
+    font-size: 35px;
 }
 
 .close-navbar {
     display: none;
+}
+
+.navbar-nav {
+    font-size: 25px;
+}
+
+.active{
+    border-radius: 50px;
+    background-color: rgb(63, 63, 63);
 }
 
 /*phone screens: portrait and small landscape | tablet screens: small portrait only*/
@@ -21,6 +31,10 @@ body {
     body {
         padding-top: 60px;
         transition: all 0.3s ease;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
     }
 
     .navbar-toggler:hover{
@@ -198,24 +212,19 @@ body {
 }
 
 /*tablet screens: large tablet view ports*/
-@media only screen and (min-width: 1000px) and (min-height: 700px) {
+@media only screen and (min-width: 1000px) and (max-width: 1030px) and (min-height: 700px) and (max-height: 770px) {
 
     .navbar-brand {
         font-size: 30px;
     }
     
     .nav-item {
-        position: relative;
         font-size: 20px;
-        margin-right: 5%;
     }
 
     .nav-item:hover, .active{
         border-radius: 50px;
         background-color: rgb(63, 63, 63);
-        // font-weight: bold;
     }
 }
-
-/*tablet screens: extra large tablet view ports*/
 
