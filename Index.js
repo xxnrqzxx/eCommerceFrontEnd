@@ -59,7 +59,7 @@ class Navbar extends React.Component {
 
 
     render() {
-        const {darken} = this.state;
+        let dark = this.state.darken ? "brightness(50%)" : "brightness(100%)";
         let color = this.state.darken ? "rgba(0, 0, 0, 0.5)" : "";
         let scroll = this.state.darken ? "hidden" : "visible";
     
@@ -94,7 +94,7 @@ class Navbar extends React.Component {
                         </ul>
                     </div>
                 </nav>
-                <Contents darkenImage = {darken}/>
+                <Contents darkenImage = {dark}/>
             </div>
         );
     }
@@ -143,29 +143,28 @@ class Navbar extends React.Component {
 }
 
 class Contents extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            darken: this.props.darkenImage
-        }
-    }
-
+    
     render() {
-
+        let filter = this.props.darkenImage;
+        const style = {
+            filter: filter
+        };
         return(
             <div className="container-fluid d-flex flex-column justify-content-center pt-3">
-                <img id="img" className="pb-3" src="https://picsum.photos/800/400"></img>
-                <img id="img" className="pb-3" src="https://picsum.photos/800/400"></img>
-                <img id="img" className="pb-3" src="https://picsum.photos/800/400"></img>
-                <img id="img" className="pb-3" src="https://picsum.photos/800/400"></img>
-                <img id="img" className="pb-3" src="https://picsum.photos/800/400"></img>
-                <img id="img" className="pb-3" src="https://picsum.photos/800/400"></img>
-                <img id="img" className="pb-3" src="https://picsum.photos/800/400"></img>
-                <img id="img" className="pb-3" src="https://picsum.photos/800/400"></img>
-                <img id="img" className="pb-3" src="https://picsum.photos/800/400"></img>
+                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
+                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
+                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
+                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
+                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
+                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
+                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
+                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
+                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
+                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
             </div>
         );
     }
+    
 }
 
 
