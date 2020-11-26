@@ -125,20 +125,9 @@ class Navbar extends React.Component {
         }
 
     darkBG() {
-        const navToggler = document.querySelector('.navbar-toggler');
-        let buttonState = this.state.darken ? " close" : " open";
-
-        if(navToggler.classList.contains('close')) {
-            navToggler.classList.remove('close');
-        } else if (navToggler.classList.contains('open')) {
-            navToggler.classList.remove('open');
-        }
-
         this.setState(state => ({
             darken: !this.state.darken
         }));
-
-        navToggler.className += buttonState;
     }
 }
 
