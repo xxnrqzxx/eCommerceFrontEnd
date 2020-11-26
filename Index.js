@@ -59,39 +59,43 @@ class Navbar extends React.Component {
 
 
     render() {
+        let dark = this.state.darken ? "brightness(50%)" : "brightness(100%)";
         let color = this.state.darken ? "rgba(0, 0, 0, 0.5)" : "";
         let scroll = this.state.darken ? "hidden" : "visible";
-
+    
         document.body.style.backgroundColor = color;
         document.body.style.overflowY = scroll;
 
         window.addEventListener('resize', this.changeOrientation);
 
         return(
-            <nav className="navbar navbar-expand-lg navbar-dark">
-                <a href="#" className="navbar-brand">GRAFIX2GO</a>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" onClick={this.darkBG}>
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="myNavbar">
-                    <button className="close-navbar">
-                        <svg width="2em" height="2em" viewBox="0 0 16 16" className="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                        </svg>
+            <div>
+                <nav className="navbar navbar-expand-lg navbar-dark">
+                    <a href="#" className="navbar-brand">GRAFIX2GO</a>
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" onClick={this.darkBG}>
+                        <span className="navbar-toggler-icon"></span>
                     </button>
-                    <ul className="navbar-nav">
-                        <li className="nav-item active">
-                            <a className="nav-link" href="#">HOME</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">ABOUT</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">CONTACT</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+                    <div className="collapse navbar-collapse" id="myNavbar">
+                        <button className="close-navbar">
+                            <svg width="2em" height="2em" viewBox="0 0 16 16" className="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                            </svg>
+                        </button>
+                        <ul className="navbar-nav">
+                            <li className="nav-item active">
+                                <a className="nav-link" href="#">HOME</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">ABOUT</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <Contents darkenImage = {dark}/>
+            </div>
         );
     }
 
@@ -128,29 +132,29 @@ class Navbar extends React.Component {
 }
 
 class Contents extends React.Component {
-    constructor(props) {
-        super(props);
-
-    }
-
+    
     render() {
-
+        let filter = this.props.darkenImage;
+        const style = {
+            filter: filter
+        };
         return(
             <div className="container-fluid d-flex flex-column justify-content-center pt-3">
-                <img id="img" className="pb-3" src="https://picsum.photos/800/400"></img>
-                <img id="img" className="pb-3" src="https://picsum.photos/1200/600"></img>
-                <img id="img" className="pb-3" src="https://picsum.photos/1200/600"></img>
-                <img id="img" className="pb-3" src="https://picsum.photos/1200/600"></img>
-                <img id="img" className="pb-3" src="https://picsum.photos/1200/600"></img>
-                <img id="img" className="pb-3" src="https://picsum.photos/1200/600"></img>
-                <img id="img" className="pb-3" src="https://picsum.photos/1200/600"></img>
-                <img id="img" className="pb-3" src="https://picsum.photos/1200/600"></img>
-                <img id="img" className="pb-3" src="https://picsum.photos/1200/600"></img>
+                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
+                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
+                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
+                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
+                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
+                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
+                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
+                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
+                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
+                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
             </div>
         );
     }
+    
 }
 
 
 ReactDOM.render(<Navbar />, document.querySelector('#nav'));
-ReactDOM.render(<Contents />, document.querySelector('#content'));
