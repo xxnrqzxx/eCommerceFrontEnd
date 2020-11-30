@@ -33,7 +33,7 @@ body {
   font-size: 25px;
 }
 
-.active {
+.navbar-nav .active {
   border-radius: 50px;
   background-color: #3f3f3f;
 }

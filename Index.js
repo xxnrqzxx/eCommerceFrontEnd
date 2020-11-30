@@ -139,17 +139,35 @@ class Contents extends React.Component {
             filter: filter
         };
         return(
-            <div className="container-fluid d-flex flex-column justify-content-center pt-3">
-                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
-                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
-                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
-                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
-                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
-                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
-                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
-                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
-                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
-                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
+            <div className="container">
+                <div id="image-carousel" className="carousel slide" data-ride="carousel">
+                    <ol className="carousel-indicators">
+                        <li data-target="#image-carousel" data-slide-to="0" className=""></li>
+                        <li data-target="#image-carousel" data-slide-to="1" className=""></li>
+                        <li data-target="#image-carousel" data-slide-to="2" className=""></li>
+                        <li data-target="#image-carousel" data-slide-to="3" className=""></li>
+                    </ol>
+                    <div className="carousel-inner">
+                        <div className="carousel-item active">
+                            <img className="d-block img-fluid" src="https://picsum.photos/id/217/1200/600"></img>
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block img-fluid" src="https://picsum.photos/id/218/1200/600"></img>
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block img-fluid" src="https://picsum.photos/id/219/1200/600"></img>
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block img-fluid" src="https://picsum.photos/id/220/1200/600"></img>
+                        </div>
+                    </div>
+                    <a href="#image-carousel" className="carousel-control-next" role="button" data-slide="next">
+                        <span className="carousel-control-next-icon"></span>
+                    </a>
+                    <a href="#image-carousel" className="carousel-control-prev" role="button" data-slide="prev">
+                        <span className="carousel-control-prev-icon"></span>
+                    </a>
+                </div>
             </div>
         );
     }
