@@ -12,7 +12,7 @@ class Contents extends React.Component {
 
     componentDidMount () {
         // alert("width: " + window.innerWidth + " height: " + window.innerHeight);
-        if(window.innerWidth < 420) {
+        if(window.innerWidth < 650) {
             document.querySelector('.navbar').className += " fixed-top";
         } else {
             document.querySelector('.navbar').classList.remove('fixed-top');
