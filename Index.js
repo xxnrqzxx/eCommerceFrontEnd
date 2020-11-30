@@ -139,10 +139,10 @@ class Contents extends React.Component {
             filter: filter
         };
         return(
-            <div className="container">
+            <div className="container-fluid">
                 <div id="image-carousel" className="carousel slide" data-ride="carousel">
                     <ol className="carousel-indicators">
-                        <li data-target="#image-carousel" data-slide-to="0" className=""></li>
+                        <li data-target="#image-carousel" data-slide-to="0" className="active"></li>
                         <li data-target="#image-carousel" data-slide-to="1" className=""></li>
                         <li data-target="#image-carousel" data-slide-to="2" className=""></li>
                         <li data-target="#image-carousel" data-slide-to="3" className=""></li>

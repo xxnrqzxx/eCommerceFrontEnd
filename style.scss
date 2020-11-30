@@ -11,17 +11,22 @@ body {
 .navbar-brand {
     font-weight: bold;
     font-size: 35px;
-    text-shadow:0px 0px 20px white;
+    text-shadow:0px 0px 30px white;
 }
 
 #go {
     color: rgb(241, 53, 53);
 }
 
-#img {
+.image{
     width: 100%;
     height: auto;
     transition: all 0.3s ease;
+}
+
+.carousel {
+    width: 100%;
+    height: auto;
 }
 
 .close-navbar {
