@@ -69,7 +69,7 @@ class Navbar extends React.Component {
         window.addEventListener('resize', this.changeOrientation);
 
         return(
-            <div>
+            <div className="container-fluid">
                 <nav className="navbar navbar-expand-lg navbar-dark">
                     <a href="#" className="navbar-brand"><em>GRAFIX</em><em id="go">2GO</em></a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" onClick={this.darkBG}>
@@ -139,39 +139,36 @@ class Contents extends React.Component {
             filter: filter
         };
         return(
-            <div className="container-fluid">
-                <div id="image-carousel" className="carousel slide" data-ride="carousel">
-                    <ol className="carousel-indicators">
-                        <li data-target="#image-carousel" data-slide-to="0" className="active"></li>
-                        <li data-target="#image-carousel" data-slide-to="1" className=""></li>
-                        <li data-target="#image-carousel" data-slide-to="2" className=""></li>
-                        <li data-target="#image-carousel" data-slide-to="3" className=""></li>
-                    </ol>
-                    <div className="carousel-inner">
-                        <div className="carousel-item active">
-                            <img className="d-block img-fluid" src="https://picsum.photos/id/217/1200/600"></img>
-                        </div>
-                        <div className="carousel-item">
-                            <img className="d-block img-fluid" src="https://picsum.photos/id/218/1200/600"></img>
-                        </div>
-                        <div className="carousel-item">
-                            <img className="d-block img-fluid" src="https://picsum.photos/id/219/1200/600"></img>
-                        </div>
-                        <div className="carousel-item">
-                            <img className="d-block img-fluid" src="https://picsum.photos/id/220/1200/600"></img>
-                        </div>
+            <div id="image-carousel" className="carousel slide" data-ride="carousel">
+                <ol className="carousel-indicators">
+                    <li data-target="#image-carousel" data-slide-to="0" className="active"></li>
+                    <li data-target="#image-carousel" data-slide-to="1" className=""></li>
+                    <li data-target="#image-carousel" data-slide-to="2" className=""></li>
+                    <li data-target="#image-carousel" data-slide-to="3" className=""></li>
+                </ol>
+                <div className="carousel-inner">
+                    <div className="carousel-item active">
+                        <img className="d-block img-fluid" src="https://picsum.photos/id/217/1200/600"></img>
                     </div>
-                    <a href="#image-carousel" className="carousel-control-next" role="button" data-slide="next">
-                        <span className="carousel-control-next-icon"></span>
-                    </a>
-                    <a href="#image-carousel" className="carousel-control-prev" role="button" data-slide="prev">
-                        <span className="carousel-control-prev-icon"></span>
-                    </a>
-                </div>
+                    <div className="carousel-item">
+                        <img className="d-block img-fluid" src="https://picsum.photos/id/218/1200/600"></img>
+                    </div>
+                    <div className="carousel-item">
+                        <img className="d-block img-fluid" src="https://picsum.photos/id/219/1200/600"></img>
+                    </div>
+                    <div className="carousel-item">
+                        <img className="d-block img-fluid" src="https://picsum.photos/id/220/1200/600"></img>
+                    </div>
+                 </div>
+                <a href="#image-carousel" className="carousel-control-next" role="button" data-slide="next">
+                    <span className="carousel-control-next-icon"></span>
+                </a>
+                <a href="#image-carousel" className="carousel-control-prev" role="button" data-slide="prev">
+                    <span className="carousel-control-prev-icon"></span>
+                </a>
             </div>
         );
-    }
-    
+    } 
 }
 
 
