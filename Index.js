@@ -134,6 +134,7 @@ class Navbar extends React.Component {
 
 class Contents extends React.Component {
 
+
     render() {
         let filter = this.props.darkenImage;
         let navOpened = this.props.navOpened;
@@ -143,8 +144,14 @@ class Contents extends React.Component {
             zIndex: navOpened
         };
 
+        $(document).ready(function() {
+            $('.carousel').carousel({
+              interval: 5000
+            })
+          });
+
         return(
-            <div id="headcontent" className="container-fluid d-flex justify-content-center">
+            <div id="headcontent" className="container d-flex justify-content-center">
                 <div id="image-carousel" className="carousel slide" data-ride="carousel" style={style}>
                     <ol className="carousel-indicators">
                         <li data-target="#image-carousel" data-slide-to="0" className="active"></li>
