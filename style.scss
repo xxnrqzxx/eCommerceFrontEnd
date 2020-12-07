@@ -18,6 +18,10 @@ body {
     color: rgb(241, 53, 53);
 }
 
+#image-carousel {
+    transition: all 0.5s ease;
+}
+
 .carousel {
     padding-top: 20px;
 }
@@ -103,7 +107,7 @@ body {
         margin-bottom: 3px;
     }
 
-    .nav-item:hover, .nav-item > .active{
+    .nav-item:hover, .nav-item.active{
         width: 200%;
         border-radius: 15px;
         background-color: rgb(63, 63, 63);
@@ -186,7 +190,7 @@ body {
         margin-bottom: 3px;
     }
 
-    .nav-item:hover, .nav-item > .active{
+    .nav-item:hover, .nav-item.active{
         width: 200%;
         border-radius: 15px;
         background-color: rgb(63, 63, 63);
@@ -231,7 +235,7 @@ body {
         font-size: 20px;
     }
 
-    .nav-item:hover, .nav-item > .active{
+    .nav-item:hover, .nav-item.active{
         border-radius: 50px;
         background-color: rgb(63, 63, 63);
     }
