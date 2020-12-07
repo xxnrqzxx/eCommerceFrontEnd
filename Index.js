@@ -59,6 +59,7 @@ class Navbar extends React.Component {
 
 
     render() {
+        let nav = this.state.darken ? "-1" : "1";
         let dark = this.state.darken ? "brightness(50%)" : "brightness(100%)";
         let color = this.state.darken ? "rgba(0, 0, 0, 0.5)" : "";
         let scroll = this.state.darken ? "hidden" : "visible";
@@ -94,7 +95,7 @@ class Navbar extends React.Component {
                         </ul>
                     </div>
                 </nav>
-                <Contents darkenImage = {dark}/>
+                <Contents darkenImage = {dark} navOpened = {nav}/>
             </div>
         );
     }
@@ -132,29 +133,56 @@ class Navbar extends React.Component {
 }
 
 class Contents extends React.Component {
-    
+
+
     render() {
         let filter = this.props.darkenImage;
+        let navOpened = this.props.navOpened;
+
         const style = {
-            filter: filter
+            filter: filter,
+            zIndex: navOpened
         };
+
+        $(document).ready(function() {
+            $('.carousel').carousel({
+              interval: 5000
+            })
+          });
+
         return(
-            <div className="container-fluid d-flex flex-column justify-content-center pt-3">
-                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
-                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
-                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
-                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
-                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
-                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
-                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
-                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
-                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
-                <img id="img" style={style} className="pb-3" src="https://picsum.photos/800/400"></img>
+            <div id="headcontent" className="container d-flex justify-content-center">
+                <div id="image-carousel" className="carousel slide" data-ride="carousel" style={style}>
+                    <ol className="carousel-indicators">
+                        <li data-target="#image-carousel" data-slide-to="0" className="active"></li>
+                        <li data-target="#image-carousel" data-slide-to="1" className=""></li>
+                        <li data-target="#image-carousel" data-slide-to="2" className=""></li>
+                        <li data-target="#image-carousel" data-slide-to="3" className=""></li>
+                    </ol>
+                    <div className="carousel-inner">
+                        <div className="carousel-item active">
+                            <img className="d-block img-fluid" src="https://picsum.photos/id/217/1200/600"></img>
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block img-fluid" src="https://picsum.photos/id/218/1200/600"></img>
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block img-fluid" src="https://picsum.photos/id/219/1200/600"></img>
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block img-fluid" src="https://picsum.photos/id/220/1200/600"></img>
+                        </div>
+                    </div>
+                    <a href="#image-carousel" className="carousel-control-next" role="button" data-slide="next">
+                        <span className="carousel-control-next-icon"></span>
+                    </a>
+                    <a href="#image-carousel" className="carousel-control-prev" role="button" data-slide="prev">
+                        <span className="carousel-control-prev-icon"></span>
+                    </a>
+                </div>
             </div>
         );
-    }
-    
+    } 
 }
-
 
 ReactDOM.render(<Navbar />, document.querySelector('#nav'));
