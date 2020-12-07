@@ -8,5 +8,7 @@
             "savePath": "./css/"
         }
     ],
-    "liveSassCompile.settings.generateMap": false
+    "liveSassCompile.settings.generateMap": false,
+    "files.autoSave": "afterDelay",
+    "workbench.editor.enablePreview": false
 }
