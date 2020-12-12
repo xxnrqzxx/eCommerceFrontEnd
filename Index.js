@@ -53,7 +53,7 @@ class Navbar extends React.Component {
         if(window.innerWidth <= 970) {
             // alert(window.innerWidth);
             navBar.className += " fixed-top";
-            navBrand.innerHTML = "<em>G2G</em>";
+            navBrand.innerHTML = "<img class='g2g' src='./images/logo-sm.png'>";
         } else {
             navBrand.innerHTML = "<em>GRAFIX</em><em id='go'>2GO</em>"
             navBar.classList.remove('fixed-top');
@@ -111,7 +111,7 @@ class Navbar extends React.Component {
         const navBar = document.querySelector('.navbar');
         const navBrand = document.querySelector('.navbar-brand');
         if(window.innerWidth <= 970) {
-            navBrand.innerHTML = "<em>G2G</em>";
+            navBrand.innerHTML = "<img class='g2g' src='./images/logo-sm.png'>";
             navBar.className += " fixed-top";
         } else {
             navBrand.innerHTML = "<em>GRAFIX</em><em id='go'>2GO</em>"

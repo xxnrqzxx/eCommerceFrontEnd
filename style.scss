@@ -47,8 +47,9 @@ body {
         transition: all 0.3s ease;
     }
 
-    .navbar-brand {
-        font-size: 20px;
+    .g2g {
+        width: 80px;
+        height: 52px;
     }
 
     .navbar-toggler:hover{
@@ -145,7 +146,7 @@ body {
 /*phone screens: large landscape only || tablet screens: portrait and small landscape only*/
 @media only screen and (min-width: 800px) and (max-width: 970px){
     body {
-        padding-top: 85px;
+        padding-top: 90px;
         transition: all 0.3s ease;
     }
 
@@ -178,8 +179,9 @@ body {
         font-size: 25px;
     }
 
-    .navbar-brand {
-        font-size: 30px;
+    .g2g {
+        width: 95px;
+        height: 62px;
     }
 
     .close-navbar {
