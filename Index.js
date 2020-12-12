@@ -55,7 +55,7 @@ class Navbar extends React.Component {
             navBar.className += " fixed-top";
             navBrand.innerHTML = "<img class='g2g' src='./images/logo-sm.png'>";
         } else {
-            navBrand.innerHTML = "<em>GRAFIX</em><em id='go'>2GO</em>"
+            navBrand.innerHTML = "<img class='g2g-lg' src='./images/logo-lg.png'>"; 
             navBar.classList.remove('fixed-top');
 
         }
@@ -114,7 +114,7 @@ class Navbar extends React.Component {
             navBrand.innerHTML = "<img class='g2g' src='./images/logo-sm.png'>";
             navBar.className += " fixed-top";
         } else {
-            navBrand.innerHTML = "<em>GRAFIX</em><em id='go'>2GO</em>"
+            navBrand.innerHTML = "<img class='g2g-lg' src='./images/logo-lg.png'>";  
             navBar.classList.remove('fixed-top');
             this.hideSideBar();
             this.setState(state => ({

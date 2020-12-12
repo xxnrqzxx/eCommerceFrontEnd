@@ -14,8 +14,9 @@ body {
   text-shadow: 0px 0px 30px white;
 }
 
-#go {
-  color: #f13535;
+.g2g-lg {
+  width: 400px;
+  height: auto;
 }
 
 #image-carousel {
@@ -49,7 +50,7 @@ body {
   }
   .g2g {
     width: 80px;
-    height: 52px;
+    height: auto;
   }
   .navbar-toggler:hover {
     background-color: #3f3f3f;
@@ -169,7 +170,7 @@ body {
   }
   .g2g {
     width: 95px;
-    height: 62px;
+    height: auto;
   }
   .close-navbar {
     margin-top: -38%;
