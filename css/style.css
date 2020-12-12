@@ -3,7 +3,9 @@ body {
 }
 
 .navbar {
-  background-color: black;
+  background: url("../images/navbg.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
   padding: 10px;
   z-index: 1;
 }
@@ -47,6 +49,9 @@ body {
     padding-top: 70px;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
+  }
+  .navbar {
+    background: black;
   }
   .g2g {
     width: 80px;
@@ -145,6 +150,9 @@ body {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
+  .navbar {
+    background: black;
+  }
   .navbar-toggler:hover {
     background-color: #3f3f3f;
   }
@@ -216,9 +224,6 @@ body {
 
 /*tablet screens: large tablet view ports*/
 @media only screen and (min-width: 1000px) and (max-width: 1030px) and (min-height: 700px) and (max-height: 770px) {
-  .navbar-brand {
-    font-size: 30px;
-  }
   .nav-item {
     font-size: 20px;
   }
