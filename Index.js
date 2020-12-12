@@ -59,7 +59,7 @@ class Navbar extends React.Component {
 
 
     render() {
-        let nav = this.state.darken ? "-1" : "1";
+        // let nav = this.state.darken ? "-1" : "1";
         let dark = this.state.darken ? "brightness(50%)" : "brightness(100%)";
         let color = this.state.darken ? "rgba(0, 0, 0, 0.5)" : "";
         let scroll = this.state.darken ? "hidden" : "visible";
@@ -95,7 +95,10 @@ class Navbar extends React.Component {
                         </ul>
                     </div>
                 </nav>
-                <Contents darkenImage = {dark} navOpened = {nav}/>
+                <Contents darkenImage = {dark} />
+                <Contents darkenImage = {dark} />
+                <Contents darkenImage = {dark} />
+                <Contents darkenImage = {dark} />
             </div>
         );
     }
@@ -140,8 +143,7 @@ class Contents extends React.Component {
         let navOpened = this.props.navOpened;
 
         const style = {
-            filter: filter,
-            zIndex: navOpened
+            filter: filter
         };
 
         $(document).ready(function() {
