@@ -23,6 +23,10 @@ body {
   transition: all 0.5s ease;
 }
 
+#headcontent {
+  z-index: -1;
+}
+
 .carousel {
   padding-top: 20px;
 }
