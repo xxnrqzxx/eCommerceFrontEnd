@@ -8,5 +8,6 @@
             "savePath": "./css/"
         }
     ],
-    "liveSassCompile.settings.generateMap": false
+    "liveSassCompile.settings.generateMap": false,
+    "files.autoSaveDelay": 500
 }
