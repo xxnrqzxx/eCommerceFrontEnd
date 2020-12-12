@@ -1,5 +1,5 @@
 class Navbar extends React.Component {
-    // test
+
     constructor(props){
         super(props);
         this.state = {

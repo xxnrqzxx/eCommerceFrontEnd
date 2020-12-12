@@ -40,7 +40,7 @@ body {
 
 .navbar-nav .active {
   border-radius: 50px;
-  background-color: #3f3f3f;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 /*phone screens: portrait and small landscape | tablet screens: small portrait only*/
