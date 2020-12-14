@@ -48,9 +48,19 @@ body {
 /*phone screens: portrait and small landscape | tablet screens: small portrait only*/
 @media only screen and (min-width: 320px) and (max-width: 770px) {
     body {
-        padding-top: 70px;
+        padding-top: 100px;
         transition: all 0.3s ease;
     }
+
+    .services {
+        background-color: black;
+        color: white;
+        width: auto;
+        border-radius: 50px;
+        font-weight: bold;
+        text-align: center;
+    }
+
 
     .navbar {
         background: black;
