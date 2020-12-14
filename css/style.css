@@ -29,6 +29,7 @@ body {
 .services {
   text-align: center;
   background-color: #c27313;
+  font-weight: bold;
   color: white;
 }
 
