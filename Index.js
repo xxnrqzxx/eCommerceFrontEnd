@@ -1,5 +1,5 @@
 class Navbar extends React.Component {
-    // test
+
     constructor(props){
         super(props);
         this.state = {
@@ -48,12 +48,16 @@ class Navbar extends React.Component {
 
     fixedTop() {
         const navBar = document.querySelector('.navbar');
+        const navBrand = document.querySelector('.navbar-brand');
 
         if(window.innerWidth <= 970) {
             // alert(window.innerWidth);
             navBar.className += " fixed-top";
+            navBrand.innerHTML = "<img class='g2g' src='./images/logo-sm.png'>";
         } else {
+            navBrand.innerHTML = "<img class='g2g-lg' src='./images/logo-lg.png'>"; 
             navBar.classList.remove('fixed-top');
+
         }
     }
 
@@ -72,7 +76,7 @@ class Navbar extends React.Component {
         return(
             <div>
                 <nav className="navbar navbar-expand-lg navbar-dark">
-                    <a href="#" className="navbar-brand"><em>GRAFIX</em><em id="go">2GO</em></a>
+                    <a href="#" className="navbar-brand"></a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" onClick={this.darkBG}>
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -105,10 +109,12 @@ class Navbar extends React.Component {
 
     changeOrientation() {
         const navBar = document.querySelector('.navbar');
- 
+        const navBrand = document.querySelector('.navbar-brand');
         if(window.innerWidth <= 970) {
+            navBrand.innerHTML = "<img class='g2g' src='./images/logo-sm.png'>";
             navBar.className += " fixed-top";
         } else {
+            navBrand.innerHTML = "<img class='g2g-lg' src='./images/logo-lg.png'>";  
             navBar.classList.remove('fixed-top');
             this.hideSideBar();
             this.setState(state => ({
