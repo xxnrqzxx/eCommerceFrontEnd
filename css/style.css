@@ -26,6 +26,12 @@ body {
   transition: all 0.5s ease;
 }
 
+.services {
+  text-align: center;
+  background-color: #c27313;
+  color: white;
+}
+
 .carousel {
   padding-top: 20px;
 }

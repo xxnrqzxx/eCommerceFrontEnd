@@ -175,36 +175,39 @@ class Contents extends React.Component {
           });
 
         return(
-            <div id="headcontent" className="container d-flex-row justify-content-center">
+            <div id="headcontent" className="d-flex-row justify-content-center">
                 <h1 style={style} className="services">Our Services</h1>
-                <div id="image-carousel" className="carousel slide" data-ride="carousel" style={style}>
-                    <ol className="carousel-indicators">
-                        <li data-target="#image-carousel" data-slide-to="0" className="active"></li>
-                        <li data-target="#image-carousel" data-slide-to="1" className=""></li>
-                        <li data-target="#image-carousel" data-slide-to="2" className=""></li>
-                        <li data-target="#image-carousel" data-slide-to="3" className=""></li>
-                    </ol>
-                    <div className="carousel-inner">
-                        <div className="carousel-item active">
-                            <img className="d-block img-fluid" src="./images/logodesign.png"></img>
+                <div class="container">
+                    <div id="image-carousel" className="carousel slide" data-ride="carousel" style={style}>
+                        <ol className="carousel-indicators">
+                            <li data-target="#image-carousel" data-slide-to="0" className="active"></li>
+                            <li data-target="#image-carousel" data-slide-to="1" className=""></li>
+                            <li data-target="#image-carousel" data-slide-to="2" className=""></li>
+                            <li data-target="#image-carousel" data-slide-to="3" className=""></li>
+                        </ol>
+                        <div className="carousel-inner">
+                            <div className="carousel-item active">
+                                <img className="d-block img-fluid" src="./images/logodesign.png"></img>
+                            </div>
+                            <div className="carousel-item">
+                                <img className="d-block img-fluid" src="./images/brochure.png"></img>
+                            </div>
+                            <div className="carousel-item">
+                                <img className="d-block img-fluid" src="./images/graphicdesign.png"></img>
+                            </div>
+                            <div className="carousel-item">
+                                <img className="d-block img-fluid" src="./images/businesscards.png"></img>
+                            </div>
                         </div>
-                        <div className="carousel-item">
-                            <img className="d-block img-fluid" src="./images/brochure.png"></img>
-                        </div>
-                        <div className="carousel-item">
-                            <img className="d-block img-fluid" src="./images/graphicdesign.png"></img>
-                        </div>
-                        <div className="carousel-item">
-                            <img className="d-block img-fluid" src="./images/businesscards.png"></img>
-                        </div>
+                        <a href="#image-carousel" className="carousel-control-next" role="button" data-slide="next">
+                            <span className="carousel-control-next-icon"></span>
+                        </a>
+                        <a href="#image-carousel" className="carousel-control-prev" role="button" data-slide="prev">
+                            <span className="carousel-control-prev-icon"></span>
+                        </a>
                     </div>
-                    <a href="#image-carousel" className="carousel-control-next" role="button" data-slide="next">
-                        <span className="carousel-control-next-icon"></span>
-                    </a>
-                    <a href="#image-carousel" className="carousel-control-prev" role="button" data-slide="prev">
-                        <span className="carousel-control-prev-icon"></span>
-                    </a>
                 </div>
+                
             </div>
         );
     } 
