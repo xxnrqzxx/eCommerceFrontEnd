@@ -59,6 +59,7 @@ body {
         border-radius: 50px;
         font-weight: bold;
         text-align: center;
+        transition: all 0.5s ease;
     }
 
 
@@ -112,7 +113,7 @@ body {
 
     @media only screen and (min-width: 700px) {
         body {
-            padding-top: 80px;
+            padding-top: 100px;
         }
 
         .nav-link {
@@ -170,8 +171,18 @@ body {
 /*phone screens: large landscape only || tablet screens: portrait and small landscape only*/
 @media only screen and (min-width: 800px) and (max-width: 970px){
     body {
-        padding-top: 90px;
+        padding-top: 110px;
         transition: all 0.3s ease;
+    }
+
+    .services {
+        background-color: black;
+        color: white;
+        width: auto;
+        border-radius: 50px;
+        font-weight: bold;
+        text-align: center;
+        transition: all 0.5s ease;
     }
 
     .navbar {

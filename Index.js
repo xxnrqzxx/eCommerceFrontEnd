@@ -150,14 +150,33 @@ class Contents extends React.Component {
         };
 
         $(document).ready(function() {
+
             $('.carousel').carousel({
               interval: 5000
             })
+
+            setTimeout(function() {
+                $('.carousel-indicators').fadeOut("fast");
+            }, 5000);
+
+            $('.carousel').on({
+                mouseenter: function(){
+                    $('.carousel-indicators').fadeIn("fast");
+                },
+                mouseleave: function(){
+                    setTimeout(function(){
+                        $('.carousel-indicators').fadeOut("fast");
+                    }, 5000);
+                },
+                click: function(){
+                    $('.carousel-indicators').fadeIn("fast");
+                }
+            });
           });
 
         return(
             <div id="headcontent" className="container d-flex-row justify-content-center">
-                <h1 className="services">Our Services</h1>
+                <h1 style={style} className="services">Our Services</h1>
                 <div id="image-carousel" className="carousel slide" data-ride="carousel" style={style}>
                     <ol className="carousel-indicators">
                         <li data-target="#image-carousel" data-slide-to="0" className="active"></li>

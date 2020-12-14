@@ -59,6 +59,8 @@ body {
     border-radius: 50px;
     font-weight: bold;
     text-align: center;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
   }
   .navbar {
     background: black;
@@ -104,7 +106,7 @@ body {
 
 @media only screen and (min-width: 320px) and (max-width: 770px) and (min-width: 700px) {
   body {
-    padding-top: 80px;
+    padding-top: 100px;
   }
   .nav-link {
     font-size: 20px;
@@ -160,9 +162,19 @@ body {
 /*phone screens: large landscape only || tablet screens: portrait and small landscape only*/
 @media only screen and (min-width: 800px) and (max-width: 970px) {
   body {
-    padding-top: 90px;
+    padding-top: 110px;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
+  }
+  .services {
+    background-color: black;
+    color: white;
+    width: auto;
+    border-radius: 50px;
+    font-weight: bold;
+    text-align: center;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
   }
   .navbar {
     background: black;
