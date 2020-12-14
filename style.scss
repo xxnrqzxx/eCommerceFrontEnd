@@ -36,10 +36,12 @@ body {
 
 .navbar-nav {
     font-size: 25px;
+    background-color: rgba(180, 99, 1, 0.5);
+    border-radius: 50px;
 
     .active{
         border-radius: 50px;
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.3);
     }
 }
 
@@ -52,6 +54,10 @@ body {
 
     .navbar {
         background: black;
+    }
+
+    .navbar-nav {
+        background-color: black;
     }
 
     .g2g {
@@ -87,6 +93,7 @@ body {
     @media only screen and (min-width: 500px) {
         .navbar-nav {
             margin-top: -20%;
+            background-color: black;
         }
         .nav-link {
             font-size: 18px;
@@ -166,6 +173,7 @@ body {
     }
 
     .navbar-nav {
+        background-color: black;
        margin-top: -20%; 
     }
 
@@ -241,13 +249,18 @@ body {
 /*tablet screens: large tablet view ports*/
 @media only screen and (min-width: 1000px) and (max-width: 1030px) and (min-height: 700px) and (max-height: 770px) {
 
+    .g2g-lg {
+        width: 300px;
+        height: auto;
+    }
+
     .nav-item {
         font-size: 20px;
     }
 
     .nav-item:hover, .nav-item.active{
         border-radius: 50px;
-        background-color: rgb(63, 63, 63);
+        background-color: rgba(63, 63, 63, 0.4);
     }
 }
 
