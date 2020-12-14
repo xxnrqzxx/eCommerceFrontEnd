@@ -53,9 +53,9 @@ body {
 }
 
 /*phone screens: portrait and small landscape | tablet screens: small portrait only*/
-@media only screen and (min-width: 320px) and (max-width: 770px) {
+@media only screen and (min-width: 320px) and (max-width: 790px) {
   body {
-    padding-top: 100px;
+    padding-top: 80px;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
@@ -101,7 +101,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 770px) and (min-width: 500px) {
+@media only screen and (min-width: 320px) and (max-width: 790px) and (min-width: 500px) {
   .navbar-nav {
     margin-top: -20%;
     background-color: black;
@@ -111,9 +111,9 @@ body {
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 770px) and (min-width: 700px) {
+@media only screen and (min-width: 320px) and (max-width: 790px) and (min-width: 700px) {
   body {
-    padding-top: 100px;
+    padding-top: 78px;
   }
   .nav-link {
     font-size: 20px;
@@ -126,7 +126,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 770px) {
+@media only screen and (min-width: 320px) and (max-width: 790px) {
   .nav-item {
     padding-left: 5px;
     margin-bottom: 3px;
@@ -169,7 +169,7 @@ body {
 /*phone screens: large landscape only || tablet screens: portrait and small landscape only*/
 @media only screen and (min-width: 800px) and (max-width: 970px) {
   body {
-    padding-top: 110px;
+    padding-top: 87px;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }

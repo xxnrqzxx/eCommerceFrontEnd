@@ -53,11 +53,25 @@ body {
 }
 
 /*phone screens: portrait and small landscape | tablet screens: small portrait only*/
-@media only screen and (min-width: 320px) and (max-width: 770px) {
+@media only screen and (min-width: 320px) and (max-width: 790px) {
     body {
-        padding-top: 100px;
+        padding-top: 80px;
         transition: all 0.3s ease;
     }
+
+    // .background {
+    //     background: url('../images/navbg.png');
+    //     z-index: -1;
+    //     position: absolute;
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //     top: 0;
+    //     bottom: 0;
+    //     right: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     opacity: 0.5;
+    // }
 
     .services {
         background-color: black;
@@ -120,7 +134,7 @@ body {
 
     @media only screen and (min-width: 700px) {
         body {
-            padding-top: 100px;
+            padding-top: 78px;
         }
 
         .nav-link {
@@ -178,7 +192,7 @@ body {
 /*phone screens: large landscape only || tablet screens: portrait and small landscape only*/
 @media only screen and (min-width: 800px) and (max-width: 970px){
     body {
-        padding-top: 110px;
+        padding-top: 87px;
         transition: all 0.3s ease;
     }
 

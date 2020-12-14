@@ -177,8 +177,8 @@ class Contents extends React.Component {
         return(
             <div id="headcontent" className="d-flex-row justify-content-center">
                 <h1 style={style} className="services">Our Services</h1>
-                <div class="container">
-                    <div id="image-carousel" className="carousel slide" data-ride="carousel" style={style}>
+                <div className="container">
+                    <div id="image-carousel" className="carousel slide carousel-fade" data-ride="carousel" style={style}>
                         <ol className="carousel-indicators">
                             <li data-target="#image-carousel" data-slide-to="0" className="active"></li>
                             <li data-target="#image-carousel" data-slide-to="1" className=""></li>
@@ -206,8 +206,7 @@ class Contents extends React.Component {
                             <span className="carousel-control-prev-icon"></span>
                         </a>
                     </div>
-                </div>
-                
+                </div>       
             </div>
         );
     } 
