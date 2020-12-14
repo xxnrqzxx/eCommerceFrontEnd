@@ -116,7 +116,7 @@ body {
   }
   .nav-item:hover, .nav-item.active {
     width: 200%;
-    border-radius: 15px;
+    border-radius: 50px;
     background-color: #3f3f3f;
     font-weight: bold;
   }
@@ -196,7 +196,7 @@ body {
   }
   .nav-item:hover, .nav-item.active {
     width: 200%;
-    border-radius: 15px;
+    border-radius: 50px;
     background-color: #3f3f3f;
     font-weight: bold;
   }
