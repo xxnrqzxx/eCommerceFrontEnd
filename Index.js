@@ -100,9 +100,6 @@ class Navbar extends React.Component {
                     </div>
                 </nav>
                 <Contents darkenImage = {dark} />
-                <Contents darkenImage = {dark} />
-                <Contents darkenImage = {dark} />
-                <Contents darkenImage = {dark} />
             </div>
         );
     }
@@ -159,26 +156,22 @@ class Contents extends React.Component {
           });
 
         return(
-            <div id="headcontent" className="container d-flex justify-content-center">
+            <div id="headcontent" className="container-fluid d-flex justify-content-center">
                 <div id="image-carousel" className="carousel slide" data-ride="carousel" style={style}>
                     <ol className="carousel-indicators">
                         <li data-target="#image-carousel" data-slide-to="0" className="active"></li>
                         <li data-target="#image-carousel" data-slide-to="1" className=""></li>
                         <li data-target="#image-carousel" data-slide-to="2" className=""></li>
-                        <li data-target="#image-carousel" data-slide-to="3" className=""></li>
                     </ol>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img className="d-block img-fluid" src="https://picsum.photos/id/217/1200/600"></img>
+                            <img className="d-block img-fluid" src="./images/logodesign.png"></img>
                         </div>
                         <div className="carousel-item">
-                            <img className="d-block img-fluid" src="https://picsum.photos/id/218/1200/600"></img>
+                            <img className="d-block img-fluid" src="./images/brochure.png"></img>
                         </div>
                         <div className="carousel-item">
-                            <img className="d-block img-fluid" src="https://picsum.photos/id/219/1200/600"></img>
-                        </div>
-                        <div className="carousel-item">
-                            <img className="d-block img-fluid" src="https://picsum.photos/id/220/1200/600"></img>
+                            <img className="d-block img-fluid" src="./images/graphicdesign.png"></img>
                         </div>
                     </div>
                     <a href="#image-carousel" className="carousel-control-next" role="button" data-slide="next">
