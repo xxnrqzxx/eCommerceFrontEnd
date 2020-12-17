@@ -189,18 +189,38 @@ class Contents extends React.Component {
                             <li data-target="#image-carousel" data-slide-to="2" className=""></li>
                             <li data-target="#image-carousel" data-slide-to="3" className=""></li>
                         </ol>
-                        <div className="carousel-inner">
+                        <div className="carousel-inner text-white">
                             <div className="carousel-item active">
-                                <img className="d-block img-fluid" src="./images/logodesign.png"></img>
+                                <div className="card">
+                                    <img className="card-img-top img-fluid" src="./images/logodesign.png"></img>
+                                    <div className="card-body d-none d-md-block">
+                                        <p>Test</p>
+                                    </div>
+                                </div>
                             </div>
                             <div className="carousel-item">
-                                <img className="d-block img-fluid" src="./images/brochure.png"></img>
+                                <div className="card">
+                                    <img className="card-img-top img-fluid" src="./images/brochure.png"></img>
+                                    <div className="card-body d-none d-md-block">
+                                        <p>Test</p>
+                                    </div>
+                                </div>
                             </div>
                             <div className="carousel-item">
-                                <img className="d-block img-fluid" src="./images/graphicdesign.png"></img>
+                                <div className="card">
+                                    <img className="card-img-top img-fluid" src="./images/graphicdesign.png"></img>
+                                    <div className="card-body d-none d-md-block">
+                                        <p>Test</p>
+                                    </div>
+                                </div>
                             </div>
                             <div className="carousel-item">
-                                <img className="d-block img-fluid" src="./images/businesscards.png"></img>
+                                <div className="card">
+                                    <img className="card-img-top img-fluid" src="./images/businesscards.png"></img>
+                                    <div className="card-body d-none d-md-block">
+                                        <p>Test</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <a href="#image-carousel" className="carousel-control-next" role="button" data-slide="next">
