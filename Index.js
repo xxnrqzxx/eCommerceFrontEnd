@@ -71,6 +71,10 @@ class Navbar extends React.Component {
         document.body.style.backgroundColor = color;
         document.body.style.overflowY = scroll;
 
+        $(document).ready(function() {
+            $('.background').css("display", "block");
+        })
+
         window.addEventListener('resize', this.changeOrientation);
 
         return(
@@ -99,6 +103,10 @@ class Navbar extends React.Component {
                         </ul>
                     </div>
                 </nav>
+                <Contents darkenImage = {dark} />
+                <Contents darkenImage = {dark} />
+                <Contents darkenImage = {dark} />
+                <Contents darkenImage = {dark} />
                 <Contents darkenImage = {dark} />
             </div>
         );
