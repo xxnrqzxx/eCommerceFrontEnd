@@ -194,7 +194,7 @@ class Contents extends React.Component {
                                 <div className="card">
                                     <img className="card-img-top img-fluid" src="./images/logodesign.png"></img>
                                     <div className="card-body d-none d-md-block">
-                                        <p>Test</p>
+                                        <p>It is a visual shortcut to marketing your business, presenting your image and getting your message across to all clients via ad placement, event marketing & other advertising medium.</p>
                                     </div>
                                 </div>
                             </div>
@@ -202,7 +202,7 @@ class Contents extends React.Component {
                                 <div className="card">
                                     <img className="card-img-top img-fluid" src="./images/brochure.png"></img>
                                     <div className="card-body d-none d-md-block">
-                                        <p>Test</p>
+                                        <p>Set your business apart with a unique brochure. Simply tell us what you want your brochure to communicate and we'll let you know exactly what your brochure design will cost.</p>
                                     </div>
                                 </div>
                             </div>
@@ -210,7 +210,7 @@ class Contents extends React.Component {
                                 <div className="card">
                                     <img className="card-img-top img-fluid" src="./images/graphicdesign.png"></img>
                                     <div className="card-body d-none d-md-block">
-                                        <p>Test</p>
+                                        <p>No matter what your budget is, we are more than happy to talk you through and show you a variety of simple and effective ways to enhance your business through graphic design.</p>
                                     </div>
                                 </div>
                             </div>
@@ -218,7 +218,7 @@ class Contents extends React.Component {
                                 <div className="card">
                                     <img className="card-img-top img-fluid" src="./images/businesscards.png"></img>
                                     <div className="card-body d-none d-md-block">
-                                        <p>Test</p>
+                                        <p>Every company or individual needs an identity and we at Grafix2Go think you should make a very pleasing impression with your business recognition.</p>
                                     </div>
                                 </div>
                             </div>
