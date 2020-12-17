@@ -104,10 +104,6 @@ class Navbar extends React.Component {
                     </div>
                 </nav>
                 <Contents darkenImage = {dark} />
-                <Contents darkenImage = {dark} />
-                <Contents darkenImage = {dark} />
-                <Contents darkenImage = {dark} />
-                <Contents darkenImage = {dark} />
             </div>
         );
     }
