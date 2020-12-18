@@ -180,7 +180,7 @@ class Contents extends React.Component {
 
         return(
             <div id="headcontent" className="d-flex-row justify-content-center">
-                <h1 style={style} className="services">Our Services</h1>
+                <h1 style={style} className="services content">Our Services</h1>
                 <div className="container">
                     <div id="image-carousel" className="carousel slide carousel-fade" data-ride="carousel" style={style}>
                         <ol className="carousel-indicators">
@@ -231,6 +231,7 @@ class Contents extends React.Component {
                         </a>
                     </div>
                 </div>       
+                <h1 style={style} className="products content">Our Products</h1>
             </div>
         );
     } 
