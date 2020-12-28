@@ -51,7 +51,6 @@ class Navbar extends React.Component {
         const navBrand = document.querySelector('.navbar-brand');
 
         if(window.innerWidth <= 970) {
-            // alert(window.innerWidth);
             navBar.className += " fixed-top";
             navBrand.innerHTML = "<img class='g2g' src='./images/logo-sm.png'>";
         } else {
