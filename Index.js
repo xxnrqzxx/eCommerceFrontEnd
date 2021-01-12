@@ -64,7 +64,7 @@ class Navbar extends React.Component {
     render() {
         // let nav = this.state.darken ? "-1" : "1";
         let dark = this.state.darken ? "brightness(50%)" : "brightness(100%)";
-        let color = this.state.darken ? "rgba(0, 0, 0, 0.5)" : "";
+        let color = this.state.darken ? "rgba(0, 0, 0)" : "";
         let scroll = this.state.darken ? "hidden" : "visible";
     
         document.body.style.backgroundColor = color;
