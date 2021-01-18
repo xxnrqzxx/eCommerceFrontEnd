@@ -52,9 +52,9 @@ class Navbar extends React.Component {
 
         if(window.innerWidth <= 970) {
             navBar.className += " fixed-top";
-            navBrand.innerHTML = "<img class='g2g' src='./images/logo-sm.png'>";
+            navBrand.innerHTML = "<img class='g2g' src='./images/Page/logo-sm.png'>";
         } else {
-            navBrand.innerHTML = "<img class='g2g-lg' src='./images/logo-lg.png'>"; 
+            navBrand.innerHTML = "<img class='g2g-lg' src='./images/Page/logo-lg.png'>"; 
             navBar.classList.remove('fixed-top');
 
         }
@@ -111,10 +111,10 @@ class Navbar extends React.Component {
         const navBar = document.querySelector('.navbar');
         const navBrand = document.querySelector('.navbar-brand');
         if(window.innerWidth <= 970) {
-            navBrand.innerHTML = "<img class='g2g' src='./images/logo-sm.png'>";
+            navBrand.innerHTML = "<img class='g2g' src='./images/Page/logo-sm.png'>";
             navBar.className += " fixed-top";
         } else {
-            navBrand.innerHTML = "<img class='g2g-lg' src='./images/logo-lg.png'>";  
+            navBrand.innerHTML = "<img class='g2g-lg' src='./images/Page/logo-lg.png'>";  
             navBar.classList.remove('fixed-top');
             this.hideSideBar();
             this.setState(state => ({
@@ -191,7 +191,7 @@ class Contents extends React.Component {
                         <div className="carousel-inner text-white">
                             <div className="carousel-item active">
                                 <div className="card">
-                                    <img className="card-img-top img-fluid" src="./images/logodesign.png"></img>
+                                    <img className="card-img-top img-fluid" src="./images/Services/logodesign.png"></img>
                                     <div className="card-body d-none d-md-block">
                                         <p>It is a visual shortcut to marketing your business, presenting your image and getting your message across to all clients via ad placement, event marketing & other advertising medium.</p>
                                     </div>
@@ -199,7 +199,7 @@ class Contents extends React.Component {
                             </div>
                             <div className="carousel-item">
                                 <div className="card">
-                                    <img className="card-img-top img-fluid" src="./images/brochure.png"></img>
+                                    <img className="card-img-top img-fluid" src="./images/Services/brochure.png"></img>
                                     <div className="card-body d-none d-md-block">
                                         <p>Set your business apart with a unique brochure. Simply tell us what you want your brochure to communicate and we'll let you know exactly what your brochure design will cost.</p>
                                     </div>
@@ -207,7 +207,7 @@ class Contents extends React.Component {
                             </div>
                             <div className="carousel-item">
                                 <div className="card">
-                                    <img className="card-img-top img-fluid" src="./images/graphicdesign.png"></img>
+                                    <img className="card-img-top img-fluid" src="./images/Services/graphicdesign.png"></img>
                                     <div className="card-body d-none d-md-block">
                                         <p>No matter what your budget is, we are more than happy to talk you through and show you a variety of simple and effective ways to enhance your business through graphic design.</p>
                                     </div>
@@ -215,7 +215,7 @@ class Contents extends React.Component {
                             </div>
                             <div className="carousel-item">
                                 <div className="card">
-                                    <img className="card-img-top img-fluid" src="./images/businesscards.png"></img>
+                                    <img className="card-img-top img-fluid" src="./images/Services/businesscards.png"></img>
                                     <div className="card-body d-none d-md-block">
                                         <p>Every company or individual needs an identity and we at Grafix2Go think you should make a very pleasing impression with your business recognition.</p>
                                     </div>
