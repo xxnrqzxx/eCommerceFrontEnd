@@ -39,7 +39,7 @@ body {
   height: auto;
 }
 
-#image-carousel {
+#image-carousel, #card-carousel {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -58,6 +58,11 @@ body {
 
 .card {
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+#card-carousel > .carousel-inner > .carousel-item > .img {
+  width: 960px;
+  height: 720px;
 }
 
 .close-navbar {

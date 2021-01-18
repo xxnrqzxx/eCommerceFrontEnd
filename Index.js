@@ -180,7 +180,7 @@ class Contents extends React.Component {
         return(
             <div id="headcontent" className="d-flex-row justify-content-center">
                 <h1 style={style} className="services content">Our Services</h1>
-                <div className="container">
+                <div className="services container">
                     <div id="image-carousel" className="carousel slide carousel-fade" data-ride="carousel" style={style}>
                         <ol className="carousel-indicators">
                             <li data-target="#image-carousel" data-slide-to="0" className="active"></li>
@@ -231,6 +231,51 @@ class Contents extends React.Component {
                     </div>
                 </div>       
                 <h1 style={style} className="products content">Our Products</h1>
+                <div className="products container">
+                    <div className="card-group d-flex">
+                        <div className="card">
+                            <div id="card-carousel" className="carousel slide" data-ride="carousel" style={style}>
+                                {/* <ol className="carousel-indicators">
+                                    <li data-target="#card-carousel" data-slide-to="0" className="active"></li>
+                                    <li data-target="#card-carousel" data-slide-to="1" className=""></li>
+                                    <li data-target="#card-carousel" data-slide-to="2" className=""></li>
+                                </ol> */}
+                                <div className="carousel-inner">
+                                    <div className="carousel-item active">
+                                        <img className="card-img-top" src="./images/Products/Shirt/customshirt1.jpg"></img>
+                                    </div>
+                                    <div className="carousel-item">
+                                        <img className="card-img-top" src="./images/Products/Shirt/customshirt2.jpg"></img>
+                                    </div>
+                                    <div className="carousel-item">
+                                        <img className="card-img-top" src="./images/Products/Shirt/customshirt3.jpg"></img>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="card">
+                            <div id="card-carousel" className="carousel slide" data-ride="carousel" style={style}>
+                                {/* <ol className="carousel-indicators">
+                                    <li data-target="#card-carousel" data-slide-to="0" className="active"></li>
+                                    <li data-target="#card-carousel" data-slide-to="1" className=""></li>
+                                    <li data-target="#card-carousel" data-slide-to="2" className=""></li>
+                                </ol> */}
+                                <div className="carousel-inner">
+                                    <div className="carousel-item active">
+                                        <img className="card-img-top" src="./images/Products/Shirt/customshirt1.jpg"></img>
+                                    </div>
+                                    <div className="carousel-item">
+                                        <img className="card-img-top" src="./images/Products/Shirt/customshirt2.jpg"></img>
+                                    </div>
+                                    <div className="carousel-item">
+                                        <img className="card-img-top" src="./images/Products/Shirt/customshirt3.jpg"></img>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
         );
     } 

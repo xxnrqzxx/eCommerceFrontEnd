@@ -28,6 +28,7 @@ body {
     z-index: 1;
 }
 
+
 .navbar-brand {
     font-weight: bold;
     font-size: 35px;
@@ -40,7 +41,7 @@ body {
     height: auto;
 }
 
-#image-carousel {
+#image-carousel, #card-carousel {
     transition: all 0.5s ease;
 }
 
@@ -58,6 +59,11 @@ body {
 
 .card{
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+#card-carousel > .carousel-inner > .carousel-item > .img {
+    width: 960px;
+    height: 720px;
 }
 
 .close-navbar {
