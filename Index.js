@@ -232,14 +232,9 @@ class Contents extends React.Component {
                 </div>       
                 <h1 style={style} className="products content">Our Products</h1>
                 <div className="products container">
-                    <div className="card-group d-flex">
+                    <div className="card-group text-white text-center" style={style}>
                         <div className="card">
-                            <div id="card-carousel" className="carousel slide" data-ride="carousel" style={style}>
-                                {/* <ol className="carousel-indicators">
-                                    <li data-target="#card-carousel" data-slide-to="0" className="active"></li>
-                                    <li data-target="#card-carousel" data-slide-to="1" className=""></li>
-                                    <li data-target="#card-carousel" data-slide-to="2" className=""></li>
-                                </ol> */}
+                            <div id="card-carousel" className="carousel slide" data-ride="carousel">
                                 <div className="carousel-inner">
                                     <div className="carousel-item active">
                                         <img className="card-img-top" src="./images/Products/Shirt/customshirt1.jpg"></img>
@@ -252,14 +247,18 @@ class Contents extends React.Component {
                                     </div>
                                 </div>
                             </div>
+                            <div className="card-body">
+                                <h6 className="card-title">Personalized T-Shirt</h6>
+                            </div>
+                            <a href="#card-carousel" className="carousel-control-next" role="button" data-slide="next">
+                                <span className="carousel-control-next-icon"></span>
+                            </a>
+                            <a href="#card-carousel" className="carousel-control-prev" role="button" data-slide="prev">
+                                <span className="carousel-control-prev-icon"></span>
+                            </a>
                         </div>
                         <div className="card">
-                            <div id="card-carousel" className="carousel slide" data-ride="carousel" style={style}>
-                                {/* <ol className="carousel-indicators">
-                                    <li data-target="#card-carousel" data-slide-to="0" className="active"></li>
-                                    <li data-target="#card-carousel" data-slide-to="1" className=""></li>
-                                    <li data-target="#card-carousel" data-slide-to="2" className=""></li>
-                                </ol> */}
+                            <div id="card-carousel" className="carousel slide" data-ride="carousel">
                                 <div className="carousel-inner">
                                     <div className="carousel-item active">
                                         <img className="card-img-top" src="./images/Products/Shirt/customshirt1.jpg"></img>
@@ -272,8 +271,40 @@ class Contents extends React.Component {
                                     </div>
                                 </div>
                             </div>
+                            <div className="card-body">
+                                <h6 className="card-title">Personalized T-Shirt</h6>
+                            </div>
+                            <a href="#card-carousel" className="carousel-control-next" role="button" data-slide="next">
+                                <span className="carousel-control-next-icon"></span>
+                            </a>
+                            <a href="#card-carousel" className="carousel-control-prev" role="button" data-slide="prev">
+                                <span className="carousel-control-prev-icon"></span>
+                            </a>
                         </div>
-                        
+                        <div className="card">
+                            <div id="card-carousel" className="carousel slide" data-ride="carousel">
+                                <div className="carousel-inner">
+                                    <div className="carousel-item active">
+                                        <img className="card-img-top" src="./images/Products/Shirt/customshirt1.jpg"></img>
+                                    </div>
+                                    <div className="carousel-item">
+                                        <img className="card-img-top" src="./images/Products/Shirt/customshirt2.jpg"></img>
+                                    </div>
+                                    <div className="carousel-item">
+                                        <img className="card-img-top" src="./images/Products/Shirt/customshirt3.jpg"></img>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="card-body">
+                                <h6 className="card-title">Personalized T-Shirt</h6>
+                            </div>
+                            <a href="#card-carousel" className="carousel-control-next" role="button" data-slide="next">
+                                <span className="carousel-control-next-icon"></span>
+                            </a>
+                            <a href="#card-carousel" className="carousel-control-prev" role="button" data-slide="prev">
+                                <span className="carousel-control-prev-icon"></span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

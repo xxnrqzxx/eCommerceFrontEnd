@@ -39,7 +39,12 @@ body {
   height: auto;
 }
 
-#image-carousel, #card-carousel {
+.card-group > .card > .card-body {
+  margin-top: -5%;
+  margin-bottom: -5%;
+}
+
+#image-carousel, .card-group {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -60,9 +65,8 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-#card-carousel > .carousel-inner > .carousel-item > .img {
-  width: 960px;
-  height: 720px;
+.card-title {
+  font-weight: bold;
 }
 
 .close-navbar {
@@ -201,7 +205,7 @@ body {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
-  .services {
+  .content {
     background-color: black;
     color: white;
     width: auto;
