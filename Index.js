@@ -234,7 +234,7 @@ class Contents extends React.Component {
                 <div className="products container">
                     <div className="card-group text-white text-center" style={style}>
                         <div className="card">
-                            <div id="card-carousel" className="carousel slide" data-ride="carousel">
+                            <div id="shirt-carousel" className="carousel slide" data-ride="carousel">
                                 <div className="carousel-inner">
                                     <div className="carousel-item active">
                                         <img className="card-img-top" src="./images/Products/Shirt/customshirt1.jpg"></img>
@@ -250,58 +250,55 @@ class Contents extends React.Component {
                             <div className="card-body">
                                 <h6 className="card-title">Personalized T-Shirt</h6>
                             </div>
-                            <a href="#card-carousel" className="carousel-control-next" role="button" data-slide="next">
+                            <a href="#shirt-carousel" className="carousel-control-next" role="button" data-slide="next">
                                 <span className="carousel-control-next-icon"></span>
                             </a>
-                            <a href="#card-carousel" className="carousel-control-prev" role="button" data-slide="prev">
+                            <a href="#shirt-carousel" className="carousel-control-prev" role="button" data-slide="prev">
                                 <span className="carousel-control-prev-icon"></span>
                             </a>
                         </div>
                         <div className="card">
-                            <div id="card-carousel" className="carousel slide" data-ride="carousel">
+                            <div id="puzzle-carousel" className="carousel slide" data-ride="carousel">
                                 <div className="carousel-inner">
                                     <div className="carousel-item active">
-                                        <img className="card-img-top" src="./images/Products/Shirt/customshirt1.jpg"></img>
+                                        <img className="card-img-top" src="./images/Products/Puzzle/jigsaw.jpg"></img>
                                     </div>
                                     <div className="carousel-item">
-                                        <img className="card-img-top" src="./images/Products/Shirt/customshirt2.jpg"></img>
+                                        <img className="card-img-top" src="./images/Products/Puzzle/jigsaw.jpg"></img>
                                     </div>
                                     <div className="carousel-item">
-                                        <img className="card-img-top" src="./images/Products/Shirt/customshirt3.jpg"></img>
+                                        <img className="card-img-top" src="./images/Products/Puzzle/jigsaw.jpg"></img>
                                     </div>
                                 </div>
                             </div>
                             <div className="card-body">
-                                <h6 className="card-title">Personalized T-Shirt</h6>
+                                <h6 className="card-title">Jigsaw Puzzle</h6>
                             </div>
-                            <a href="#card-carousel" className="carousel-control-next" role="button" data-slide="next">
+                            <a href="#puzzle-carousel" className="carousel-control-next" role="button" data-slide="next">
                                 <span className="carousel-control-next-icon"></span>
                             </a>
-                            <a href="#card-carousel" className="carousel-control-prev" role="button" data-slide="prev">
+                            <a href="#puzzle-carousel" className="carousel-control-prev" role="button" data-slide="prev">
                                 <span className="carousel-control-prev-icon"></span>
                             </a>
                         </div>
                         <div className="card">
-                            <div id="card-carousel" className="carousel slide" data-ride="carousel">
+                            <div id="magnet-carousel" className="carousel slide" data-ride="carousel">
                                 <div className="carousel-inner">
                                     <div className="carousel-item active">
-                                        <img className="card-img-top" src="./images/Products/Shirt/customshirt1.jpg"></img>
+                                        <img className="card-img-top" src="./images/Products/FridgeMagnet/fridgemagnet.jpg"></img>
                                     </div>
                                     <div className="carousel-item">
-                                        <img className="card-img-top" src="./images/Products/Shirt/customshirt2.jpg"></img>
-                                    </div>
-                                    <div className="carousel-item">
-                                        <img className="card-img-top" src="./images/Products/Shirt/customshirt3.jpg"></img>
+                                        <img className="card-img-top" src="./images/Products/FridgeMagnet/acrylicfridgemagnet.jpg"></img>
                                     </div>
                                 </div>
                             </div>
                             <div className="card-body">
-                                <h6 className="card-title">Personalized T-Shirt</h6>
+                                <h6 className="card-title">Fridge Magnets</h6>
                             </div>
-                            <a href="#card-carousel" className="carousel-control-next" role="button" data-slide="next">
+                            <a href="#magnet-carousel" className="carousel-control-next" role="button" data-slide="next">
                                 <span className="carousel-control-next-icon"></span>
                             </a>
-                            <a href="#card-carousel" className="carousel-control-prev" role="button" data-slide="prev">
+                            <a href="#magnet-carousel" className="carousel-control-prev" role="button" data-slide="prev">
                                 <span className="carousel-control-prev-icon"></span>
                             </a>
                         </div>
