@@ -257,6 +257,76 @@ class Contents extends React.Component {
                                 <span className="carousel-control-prev-icon"></span>
                             </a>
                         </div>
+                        
+                        <div className="card">
+                            <div id="puzzle-carousel" className="carousel slide" data-ride="carousel">
+                                <div className="carousel-inner">
+                                    <div className="carousel-item active">
+                                        <img className="card-img-top" src="./images/Products/Puzzle/jigsaw.jpg"></img>
+                                    </div>
+                                    <div className="carousel-item">
+                                        <img className="card-img-top" src="./images/Products/Puzzle/jigsaw.jpg"></img>
+                                    </div>
+                                    <div className="carousel-item">
+                                        <img className="card-img-top" src="./images/Products/Puzzle/jigsaw.jpg"></img>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="card-body">
+                                <h6 className="card-title">Jigsaw Puzzle</h6>
+                            </div>
+                            <a href="#puzzle-carousel" className="carousel-control-next" role="button" data-slide="next">
+                                <span className="carousel-control-next-icon"></span>
+                            </a>
+                            <a href="#puzzle-carousel" className="carousel-control-prev" role="button" data-slide="prev">
+                                <span className="carousel-control-prev-icon"></span>
+                            </a>
+                        </div>
+                        <div className="card">
+                            <div id="magnet-carousel" className="carousel slide" data-ride="carousel">
+                                <div className="carousel-inner">
+                                    <div className="carousel-item active">
+                                        <img className="card-img-top" src="./images/Products/FridgeMagnet/fridgemagnet.jpg"></img>
+                                    </div>
+                                    <div className="carousel-item">
+                                        <img className="card-img-top" src="./images/Products/FridgeMagnet/acrylicfridgemagnet.jpg"></img>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="card-body">
+                                <h6 className="card-title">Fridge Magnets</h6>
+                            </div>
+                            <a href="#magnet-carousel" className="carousel-control-next" role="button" data-slide="next">
+                                <span className="carousel-control-next-icon"></span>
+                            </a>
+                            <a href="#magnet-carousel" className="carousel-control-prev" role="button" data-slide="prev">
+                                <span className="carousel-control-prev-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="card-group text-white text-center" style={style}>
+                        <div className="card">
+                            <div id="badge-carousel" className="carousel slide" data-ride="carousel">
+                                <div className="carousel-inner">
+                                    <div className="carousel-item active">
+                                        <img className="card-img-top" src="./images/Products/ButtonBadge/buttonbadge1.jpg"></img>
+                                    </div>
+                                    <div className="carousel-item">
+                                    <img className="card-img-top" src="./images/Products/ButtonBadge/buttonbadge2.jpg"></img>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="card-body">
+                                <h6 className="card-title">2 in 1 Button Badge</h6>
+                            </div>
+                            <a href="#badge-carousel" className="carousel-control-next" role="button" data-slide="next">
+                                <span className="carousel-control-next-icon"></span>
+                            </a>
+                            <a href="#badge-carousel" className="carousel-control-prev" role="button" data-slide="prev">
+                                <span className="carousel-control-prev-icon"></span>
+                            </a>
+                        </div>
+                        
                         <div className="card">
                             <div id="puzzle-carousel" className="carousel slide" data-ride="carousel">
                                 <div className="carousel-inner">
