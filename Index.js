@@ -326,28 +326,24 @@ class Contents extends React.Component {
                                 <span className="carousel-control-prev-icon"></span>
                             </a>
                         </div>
-                        
                         <div className="card">
-                            <div id="puzzle-carousel" className="carousel slide" data-ride="carousel">
+                            <div id="planner-carousel" className="carousel slide" data-ride="carousel">
                                 <div className="carousel-inner">
                                     <div className="carousel-item active">
-                                        <img className="card-img-top" src="./images/Products/Puzzle/jigsaw.jpg"></img>
+                                        <img className="card-img-top" src="./images/Products/ExecutivePlanner/planner.jpg"></img>
                                     </div>
                                     <div className="carousel-item">
-                                        <img className="card-img-top" src="./images/Products/Puzzle/jigsaw.jpg"></img>
-                                    </div>
-                                    <div className="carousel-item">
-                                        <img className="card-img-top" src="./images/Products/Puzzle/jigsaw.jpg"></img>
+                                        <img className="card-img-top" src="./images/Products/ExecutivePlanner/planner.jpg"></img>
                                     </div>
                                 </div>
                             </div>
                             <div className="card-body">
-                                <h6 className="card-title">Jigsaw Puzzle</h6>
+                                <h6 className="card-title">Executive Planner</h6>
                             </div>
-                            <a href="#puzzle-carousel" className="carousel-control-next" role="button" data-slide="next">
+                            <a href="#planner-carousel" className="carousel-control-next" role="button" data-slide="next">
                                 <span className="carousel-control-next-icon"></span>
                             </a>
-                            <a href="#puzzle-carousel" className="carousel-control-prev" role="button" data-slide="prev">
+                            <a href="#planner-carousel" className="carousel-control-prev" role="button" data-slide="prev">
                                 <span className="carousel-control-prev-icon"></span>
                             </a>
                         </div>
