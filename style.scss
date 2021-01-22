@@ -41,6 +41,19 @@ body {
     height: auto;
 }
 
+.card-group {
+    margin-bottom: 10px;
+}
+
+.card-group > .card {
+
+    .carousel-item {
+        max-height: 200px;
+    }
+
+    margin-right: 1%;
+}
+
 .card-group > .card > .card-body {
     margin-top: -5%;
     margin-bottom: -5%;
@@ -143,6 +156,10 @@ body {
         font-size: 15px;
     }
 
+    .card-group > .card > .carousel> .carousel-inner {
+        max-height: 200px;
+    }
+
     @media only screen and (min-width: 500px) {
         .navbar-nav {
             margin-top: -20%;
@@ -151,9 +168,11 @@ body {
         .nav-link {
             font-size: 18px;
         }
+
+        
     }
 
-    @media only screen and (min-width: 700px) {
+    @media only screen and (min-width: 600px) {
         body {
             padding-top: 78px;
         }
@@ -168,6 +187,10 @@ body {
 
         .close-navbar {
             margin-top: -40%;
+        }
+
+        .card-group > .card > .carousel> .carousel-inner {
+            max-height: 115px;
         }
     }
 
@@ -306,6 +329,10 @@ body {
     .navbar-collapse.show {
         left: 50%;
         transition: all 0.3s ease;
+    }
+
+    .card-group > .card > .carousel> .carousel-inner {
+        max-height: 150px;
     }
 }
 
