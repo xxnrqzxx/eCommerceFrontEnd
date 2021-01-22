@@ -11,6 +11,8 @@ class Navbar extends React.Component {
         this.changeOrientation = this.changeOrientation.bind(this);
         this.hideSideBar = this.hideSideBar.bind(this);
         this.fixedTop = this.fixedTop.bind(this);
+        this.handleScroll = this.handleScroll.bind(this);
+        
     }
 
     componentDidMount () {
@@ -66,19 +68,28 @@ class Navbar extends React.Component {
         let dark = this.state.darken ? "brightness(50%)" : "brightness(100%)";
         let color = this.state.darken ? "rgba(0, 0, 0)" : "";
         let scroll = this.state.darken ? "hidden" : "visible";
-    
+
         document.body.style.backgroundColor = color;
         document.body.style.overflowY = scroll;
+        
+
 
         $(document).ready(function() {
             $('.background').css("display", "block");
+            document.querySelector(".navbar-brand").style.filter = dark;
+            document.querySelector(".navbar-toggler").style.filter = dark;
         })
 
         window.addEventListener('resize', this.changeOrientation);
+        window.addEventListener("scroll", this.handleScroll);
+
+        
+
+        
 
         return(
             <div>
-                <nav className="navbar navbar-expand-lg navbar-dark">
+                <nav id="navbar" className="navbar navbar-expand-lg navbar-dark">
                     <a href="#" className="navbar-brand"></a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" onClick={this.darkBG}>
                         <span className="navbar-toggler-icon"></span>
@@ -138,6 +149,18 @@ class Navbar extends React.Component {
         this.setState(state => ({
             darken: !this.state.darken
         }));
+    }
+
+    handleScroll() {
+        const navBar = document.querySelector("#navbar");
+        const navToggler = document.querySelector(".navbar-toggler");
+        if(window.pageYOffset > 0) {
+            navBar.style.backgroundColor = "black";
+            navToggler.style.backgroundColor = "black";
+        } else {
+            navBar.style.backgroundColor = "rgba(0,0,0,0)";
+            navToggler.style.backgroundColor = "rgba(194, 115, 19, 0.5)";
+        }
     }
 }
 
