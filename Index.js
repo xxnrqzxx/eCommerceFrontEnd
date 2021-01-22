@@ -312,7 +312,7 @@ class Contents extends React.Component {
                                         <img className="card-img-top" src="./images/Products/ButtonBadge/buttonbadge1.jpg"></img>
                                     </div>
                                     <div className="carousel-item">
-                                    <img className="card-img-top" src="./images/Products/ButtonBadge/buttonbadge2.jpg"></img>
+                                        <img className="card-img-top" src="./images/Products/ButtonBadge/buttonbadge2.jpg"></img>
                                     </div>
                                 </div>
                             </div>
@@ -348,23 +348,91 @@ class Contents extends React.Component {
                             </a>
                         </div>
                         <div className="card">
-                            <div id="magnet-carousel" className="carousel slide" data-ride="carousel">
+                            <div id="mug-carousel" className="carousel slide" data-ride="carousel">
                                 <div className="carousel-inner">
                                     <div className="carousel-item active">
-                                        <img className="card-img-top" src="./images/Products/FridgeMagnet/fridgemagnet.jpg"></img>
+                                        <img className="card-img-top" src="./images/Products/Mug/mug.jpg"></img>
                                     </div>
                                     <div className="carousel-item">
-                                        <img className="card-img-top" src="./images/Products/FridgeMagnet/acrylicfridgemagnet.jpg"></img>
+                                        <img className="card-img-top" src="./images/Products/Mug/mug.jpg"></img>
                                     </div>
                                 </div>
                             </div>
                             <div className="card-body">
-                                <h6 className="card-title">Fridge Magnets</h6>
+                                <h6 className="card-title">Personalized Mug Design</h6>
                             </div>
-                            <a href="#magnet-carousel" className="carousel-control-next" role="button" data-slide="next">
+                            <a href="#mug-carousel" className="carousel-control-next" role="button" data-slide="next">
                                 <span className="carousel-control-next-icon"></span>
                             </a>
-                            <a href="#magnet-carousel" className="carousel-control-prev" role="button" data-slide="prev">
+                            <a href="#mug-carousel" className="carousel-control-prev" role="button" data-slide="prev">
+                                <span className="carousel-control-prev-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="card-group text-white text-center" style={style}>
+                        <div className="card">
+                            <div id="tumbler-carousel" className="carousel slide" data-ride="carousel">
+                                <div className="carousel-inner">
+                                    <div className="carousel-item active">
+                                        <img className="card-img-top" src="./images/Products/Tumbler/tumbler.jpg"></img>
+                                    </div>
+                                    <div className="carousel-item">
+                                        <img className="card-img-top" src="./images/Products/Tumbler/tumbler.jpg"></img>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="card-body">
+                                <h6 className="card-title">Personalized Tumbler Design</h6>
+                            </div>
+                            <a href="#tumbler-carousel" className="carousel-control-next" role="button" data-slide="next">
+                                <span className="carousel-control-next-icon"></span>
+                            </a>
+                            <a href="#tumbler-carousel" className="carousel-control-prev" role="button" data-slide="prev">
+                                <span className="carousel-control-prev-icon"></span>
+                            </a>
+                        </div>
+                        <div className="card">
+                            <div id="pin-carousel" className="carousel slide" data-ride="carousel">
+                                <div className="carousel-inner">
+                                    <div className="carousel-item active">
+                                        <img className="card-img-top" src="./images/Products/Pin/pin.jpg"></img>
+                                    </div>
+                                    <div className="carousel-item">
+                                        <img className="card-img-top" src="./images/Products/Pin/pin.jpg"></img>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="card-body">
+                                <h6 className="card-title">Customized Button Pins</h6>
+                            </div>
+                            <a href="#pin-carousel" className="carousel-control-next" role="button" data-slide="next">
+                                <span className="carousel-control-next-icon"></span>
+                            </a>
+                            <a href="#pin-carousel" className="carousel-control-prev" role="button" data-slide="prev">
+                                <span className="carousel-control-prev-icon"></span>
+                            </a>
+                        </div>
+                        <div className="card">
+                            <div id="keychain-carousel" className="carousel slide" data-ride="carousel">
+                                <div className="carousel-inner">
+                                    <div className="carousel-item active">
+                                        <img className="card-img-top" src="./images/Products/Keychain/keychains.jpg"></img>
+                                    </div>
+                                    <div className="carousel-item">
+                                        <img className="card-img-top" src="./images/Products/Keychain/keychain5.jpg"></img>
+                                    </div>
+                                    <div className="carousel-item">
+                                        <img className="card-img-top" src="./images/Products/Keychain/keychain10.jpg"></img>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="card-body">
+                                <h6 className="card-title">Keychains</h6>
+                            </div>
+                            <a href="#keychain-carousel" className="carousel-control-next" role="button" data-slide="next">
+                                <span className="carousel-control-next-icon"></span>
+                            </a>
+                            <a href="#keychain-carousel" className="carousel-control-prev" role="button" data-slide="prev">
                                 <span className="carousel-control-prev-icon"></span>
                             </a>
                         </div>
