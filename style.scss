@@ -28,11 +28,16 @@ body {
     z-index: 1;
 }
 
+.navbar-toggler, .navbar {
+    transition: all 0.3s ease;
+}
+
 
 .navbar-brand {
     font-weight: bold;
     font-size: 35px;
     text-shadow:0px 0px 30px white;
+    transition: all 0.3s ease;
 }
 
 
@@ -119,7 +124,8 @@ body {
 
 
     .navbar {
-        background: black;
+        transition: all 0.3s ease;
+        background: rgba(0,0,0,0);
     }
 
     .navbar-nav {
@@ -131,8 +137,9 @@ body {
         height: auto;
     }
 
-    .navbar-toggler:hover{
-        background-color: rgb(63, 63, 63);
+    .navbar-toggler {
+        background-color: rgba(194, 115, 19, 0.5);
+        transition: all 0.3s ease;
     }
 
     .close-navbar {
